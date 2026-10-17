@@ -1,0 +1,2184 @@
+Restorative Neurology and Neuroscience 30 (2012) 137–159
+DOI 10.3233/RNN-2012-110218
+IOS Press
+137
+Counteracting tinnitus by acoustic
+coordinated reset neuromodulation
+Peter A. Tassa,b,∗ , Ilya Adamchica , Hans-Joachim Freunda , Tatjana von Stackelbergc
+and Christian Hauptmanna
+a Research Center Jülich, Institute for Neuroscience and Medicine – Neuromodulation INM-7, Jülich, Germany
+bDepartment of Stereotaxic and Functional Neurosurgery, University Hospital, Cologne, Germany
+c Ear, Nose and Throat (ENT) Center, Meerbusch, Germany
+Abstract. Purpose: Subjective tinnitus is associated with pathologic enhanced neuronal synchronization. We used a model
+based desynchronization technique, acoustic coordinated reset (CR) neuromodulation, to specifically counteract tinnitus-related
+neuronal synchrony thereby inducing an unlearning of pathological synaptic connectivity and neuronal synchrony.
+Methods: In a prospective, randomized, single blind, placebo-controlled trial in 63 patients with chronic tonal tinnitus and up
+to 50 dB hearing loss we studied safety and efficacy of different doses of acoustic CR neuromodulation. We measured visual
+analogue scale and tinnitus questionnaire (TQ) scores and spontaneous EEG.
+Results: CR treatment was safe, well-tolerated and caused a significant decrease of tinnitus loudness and symptoms. Placebo
+treatment did not lead to any significant changes. Effects gained in 12 weeks of treatment persisted through a preplanned 4-week
+therapy pause and showed sustained long-term effects after 10 months of therapy: Response, i.e. a reduction of at least 6 TQ
+points, was obtained in 75% of patients with a mean TQ reduction of 50% among responders. CR therapy significantly lowered
+tinnitus frequency and reversed the tinnitus related EEG alterations.
+Conclusion: The CR-induced reduction of tinnitus and underlying neuronal characteristics indicates a new non-invasive therapy
+which might also be applicable to other conditions with neuronal hypersynchrony.
+Keywords: Tinnitus treatment, desynchronization, plasticity, non-invasive neuromodulation
+1. Introduction
+Subjective tinnitus is an acoustic phantom phe-
+nomenon, a perception of sound in the absence of
+physical sound sources (Eggermont, 2003; Lockwood
+et al., 2002; Moller, 2003; Weisz et al., 2005a).
+This type of tinnitus is typically initiated by dam-
+age to the peripheral hearing system (Irvine et al.,
+2001; Lockwood et al., 2002; Norena et al., 2002;
+∗ Corresponding author: Prof. Dr. Peter A. Tass, Research Center
+Jülich, Institute for Neuroscience and Medicine – Neuromodulation
+INM-7, 52425 Jülich, Germany. Tel.: +49 2461 61 2087; Fax: +49
+2461 61 1880; E-mail: p.tass@fz-juelich.de.
+0922-6028/12/$27.50 © 2012 – IOS Press and the authors. All rights reserved
+Weisz et al., 2006) leading to a sequence of structural
+and functional changes in the central hearing system
+(Eggermont, 2003; Lockwood et al., 2002; Moller,
+2003; Eggermont and Roberts, 2004; Saunders, 2007).
+Both human and animal data show that deafferenta-
+tion alters receptive fields (Rajan and Irvine, 1998;
+Rauschecker, 1999; Irvine et al., 2001; Dietrich et al.,
+2001) and spontaneous activity (Eggermont, 2003;
+Norena and Eggermont, 2003; Elbert et al., 1997) of
+neurons in the auditory cortex. There are two major
+phenomena associated with tinnitus: cortical map reor-
+ganization (Robertson and Irvine, 1989; Mühlnickel
+et al., 1998; Lockwood et al., 2002; Moller, 2003)
+and the emergence of pathological neural synchrony
+138
+ P.A. Tass et al. / Counteracting tinnitus by acoustic(Ochi and Eggermont, 1997; Norena and Eggermont,
+2003; Seki and Eggermont, 2003; Weisz et al., 2005a;
+Weisz et al., 2007).
+Cortical map reorganization was demonstrated in
+animals with restricted cochlear lesions (Robertson
+and Irvine, 1989; Rajan and Irvine, 1998; Rauschecker,
+1999; Irvine et al., 2001) and in tinnitus patients
+(Mühlnickel et al., 1998; Dietrich et al., 2001; Weisz
+et al., 2005b). In a magnetoencephalography (MEG)
+study Mühlnickel et al. (1998) found that the cortical
+representation of the tinnitus frequency was clearly
+shifted into an area adjacent to the expected tono-
+topic location. However, patients with audiometrically
+impaired hearing were excluded from that study, so that
+subjects were not representative of typical tinnitus suf-
+ferers. In contrast, recent results obtained with MEG
+recordings in tinnitus patients suggest that mechanisms
+of map reorganization cannot explain the emergence
+of tinnitus in a satisfactory manner (Weisz et al.,
+2005a).
+Pathologically increased ␦ activity emerges in corti-
+cal regions deprived of afferent input (Steriade, 2006).
+Correspondingly, MEG studies in patients with chronic
+subjective tinnitus revealed an increase of power in
+particular frequency bands (Llinás et al., 1999; Weisz
+et al., 2005a; Weisz et al., 2007). An increase of band
+power in MEG, electroencephalogram (EEG) and local
+field potential (LFP) signals is typically interpreted
+as an increase in neuronal synchronization in terms
+of coincident firing within a neuronal population (see
+Klaas and Daly, 1979; Nunez, 1981; Hämäläinen et
+al., 1993; Niedermeyer and Lopes da Silva, 1999 and
+Discussion). In an MEG study Weisz et al. (2005a)
+showed that in tinnitus patients ␣ band power was
+significantly reduced, whereas ␦ band power was sig-
+nificantly increased, particularly in temporal regions.
+Furthermore, tinnitus related distress was correlated
+with this abnormal pattern of spontaneous activity
+in particular in right temporal and left frontal brain
+areas. In a further MEG study Weisz et al. (2007)
+analyzed ␥ band activity during brief epochs of pro-
+nounced enhancement of ␦ wave activity. In both
+groups, controls and tinnitus patients, ␥ band activ-
+ity was significantly increased after onset of ␦ waves.
+However, ␥ was more pronounced in tinnitus sub-
+jects compared to controls. ␥ activity at 55 Hz was
+related to the laterality of the tinnitus perception.
+Pathological neural synchronization has consistently
+been confirmed in further studies as the electrophys-
+iological correlate of the tinnitus percept. Tinnitus
+coordinated reset neuromodulation
+could be reduced by an EEG neurofeedback mediated
+suppression of ␦ band activity and enhancement of ␣
+band (Dohrmann et al., 2007a). In an MEG study a sig-
+nificant reduction of ␦ band activity in temporal areas
+was found during residual inhibition (Kahlbrock and
+Weisz, 2008). Epidural recordings from the secondary
+auditory cortex in a tinnitus patient revealed abnormal
+␪ band activity highly correlated with tinnitus loudness
+(De Ridder et al., 2011). Also in patients with acute
+tinnitus after noise trauma abnormal neuronal synchro-
+nization, namely increased ␥ band activity in the right
+auditory cortex, was found in an MEG study (Ort-
+mann et al., 2011). Not only auditory cortical areas are
+involved in the generation of tinnitus. Rather there is
+growing evidence that non-auditory areas, e.g., amyg-
+dala, cingulate cortex and parahippocampus, play a
+crucial rule, in particular, in patients with relevant
+tinnitus distress (Rauschecker et al., 2010; Vanneste
+et al., 2010). In fact, the functional interaction between
+non-auditory and auditory areas displaying abnormal
+synchrony appears to be a central feature underlying
+tinnitus distress (Schlee et al., 2009a).
+As yet, typically used tinnitus treatment strate-
+gies, such as tinnitus retraining therapy (Jastreboff
+and Hazell, 1993), are basically approaches to facil-
+itate habituation. In fact, there is a great demand for
+more causally oriented treatments specifically target-
+ing the neuronal correlates of the tinnitus percept.
+Different approaches have been tested so far (Moller
+et al. 2011). Depending on the parameters chosen,
+transcranial magnetic stimulation (TMS) may lead to
+a decrease (Chen et al., 1997) or increase (Pascual-
+Leone et al., 1994) of cortical excitability along with
+long-term potentiation or long-term depression (Wang
+et al., 1996). TMS has been applied to tinnitus patients
+(Plewnia et al., 2003; De Ridder et al., 2005). Although
+in a subgroup of patients repetitive TMS resulted
+in tinnitus relief, the effects were only moderate,
+whereas interindividual variability is high, so that
+further improvement is required until TMS can be rec-
+ommended for clinical use (Kleinjung et al., 2011).
+Another intervention with quite complex and still not
+sufficiently understood mechanism of action is audi-
+tory cortex stimulation (De Ridder et al., 2005; De
+Ridder et al., 2006). One mechanism of action may be
+that cortical stimulation directly provides deafferented
+cortex with missing input (De Ridder et al., 2007). One
+in three patients responds best to tonic auditory cortex
+stimulation, and one in three to burst stimulation (De
+Ridder et al., 2011; De Ridder and Vanneste, 2011).
+P.A. Tass et al. / Counteracting tinnitus by acousticUnlike this invasive approach, neurofeedback for the
+treatment of tinnitus aims at a suppression of patho-
+logical patterns of synchrony, e.g., a suppression of ␦
+along with an enhancement of ␣ power (Dohrmann et
+al., 2007a). To be used for clinical purposes, neurofeed-
+back approaches still require improvement (Hartmann
+et al., 2011).
+Apart from direct cortical stimulation (De Ridder et
+al., 2005; De Ridder et al., 2006), further approaches
+have been chosen to specifically counteract cortical
+map reorganization, e.g. by means of acoustic stimula-
+tion with tailor-made notched music (Okamoto et al.,
+2010) or by means of vagus nerve stimulation (VNS)
+combined with multiple tone pairing, an invasive ther-
+apy tested so far in animals only (Engineer et al., 2011).
+However, since several studies showed that patho-
+logical neuronal synchronization is highly correlated
+with tinnitus loudness (Weisz et al., 2005a; Dohrmann
+et al., 2007a; Kahlbrock and Weisz, 2008; van der
+Loo et al., 2009; De Ridder et al., 2011), whereas
+the relationship between cortical map reorganization
+and subjective measures of tinnitus is not consis-
+tent (Mühlnickel et al., 1998; Weisz et al., 2005b;
+Yang et al., 2011), we here use a different approach.
+To reduce tinnitus symptoms, we specifically coun-
+teract the electrophysiological correlate of tinnitus,
+pathological neural synchrony, by a desynchronization
+technique. Our approach employs the intimate rela-
+tionship between neuronal dynamics and connectivity
+(Yuste and Bonhoeffer, 2004). As shown computa-
+tionally, coordinated reset (CR) stimulation causes
+a desynchronization (Tass, 2003) shifting a network
+comprising spike timing-dependent plasticity (Ger-
+stner et al., 1996; Markram et al., 1997) from a
+synchronized state with strong synaptic connectivity
+to a desynchronized state with weak connectivity (Tass
+and Majtanik, 2006; Hauptmann and Tass, 2007; Tass
+and Hauptmann, 2009): The network undergoes an
+anti-kindling, i.e. it unlearns pathological connectiv-
+ity and pathological synchrony. CR neuromodulation
+was initially developed for electrical deep brain stim-
+ulation (DBS) in Parkinson’s disease (Tass, 2003),
+where brief electrical stimuli are sequentially delivered
+through different contacts of an implanted lead. Both,
+acute desynchronizing effects (Neiman et al., 2007)
+and long-lasting desynchronizing after-effects (Tass et
+al., 2009) of electrical CR have been verified in animal
+experiments.
+We here transform in this first in man trial the CR
+concept into a non-invasive, acoustic treatment for
+coordinated reset neuromodulation
+ 139
+subjective tonal tinnitus. To desynchronize a synchro-
+nized focus in the tonotopically-organized auditory
+cortex located in an area corresponding to the domi-
+nant tinnitus frequency, we acoustically delivered four
+CR tones with different frequencies centered around
+the patient’s individual tinnitus frequency (Fig. 1). The
+intent of each CR tone is to induce a phase reset or at
+least a soft phase reset (Tass, 2002), i.e. a phase reset
+achieved by an iterated delivery of that CR tone, of the
+pathological slow-wave oscillation in the ␦ frequency
+band in a sub-population of neurons tonotopically
+related to the tone’s particular frequency. A sequence
+of CR tones induces a robust desynchronization as
+shown numerically in the context of both DBS (Tass,
+2003; Tass and Hauptmann, 2009) and acoustic CR
+neuromodulation (Tass and Popovych, 2012). Based
+on our previous computational (Tass, 2003; Tass and
+Majtanik, 2006; Hauptmann and Tass, 2007; Tass and
+Hauptmann, 2009; Hauptmann and Tass, 2009; Haupt-
+mann and Tass, 2010; Tass and Popovych, 2012) and
+animal studies (Neiman et al., 2007; Tass et al., 2009)
+we expected to find a long-lasting tinnitus relief along
+with a long-lasting desynchronization of tinnitus-
+related pathological neural synchrony. Acoustic CR
+neuromodulation had not yet been applied to animals or
+humans. By the same token, the mechanism of acoustic
+CR neuromodulation (i.e. desynchronization achieved
+by a sequential phase reset of neuronal subpopulations)
+had not yet been studied in animals or humans.
+2. Materials and methods
+2.1. Study subjects
+The RESET study was a first in man dose find-
+ing trial with a prospective, single blind, multi-center,
+randomized, placebo-controlled, parallel group study
+design (“RESET study”, NCT00927121, EC Freiburg,
+Germany). 99 patients with tinnitus were screened in
+8 centers; 36 patients did not fulfill the inclusion crite-
+ria, mainly due to presence of atonal tinnitus or tinnitus
+duration less than 6 months. 26 and 37 patients were
+enrolled at two treatment centers, respectively. These
+63 patients (≥18 years) with chronic (≥6 months),
+tonal (reliable and repeated location of the tinnitus
+tone by a sinusoidal matching tone), subjective tin-
+nitus, not engaged in other tinnitus therapy and able to
+hear the stimulation tones and up to moderate hear-
+ing impairment (up to 50 dB within the frequency
+140
+ P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+Fig. 1. Acoustic coordinated reset (CR) neuromodulation: (a) The concept of CR neuromodulation comprises a spatial and temporal coordination
+of the applied stimuli to induce desynchronization leading to anti-kindling (Tass, 2003): utilizing the tonotopic organization of the primary
+auditory cortex (left, brain adapted from Chittka and Brockmann PLoS Biology, 2005 with kind permission of the authors) short sinusoidal
+tones of different frequencies (f1 to f4) induce a soft reset in different target areas grouped around the tinnitus focus (Tass, 2002). Three CR
+cycles, each comprising a randomized sequence of four tones (right), are followed by two silent cycles. That pattern is repeated periodically. The
+random variation of the tone sequences (Tass and Majtanik, 2006) and the 3 : 2 ON-OFF pattern (Tass, 2003, Lysyansky et al., 2011) optimize
+the desynchronizing CR effect. (b) Four stimulation groups and one placebo group were investigated. For G1, G3 and G4 four tones (top, f1 to
+f4 ) are grouped around the tinnitus frequency (ft ). G3 differs only in repetition rate F being adapted to the individual EEG ␦-band peak. For G2
+each CR cycle is formed by a varying composition of four tones (dark green: active) chosen out of twelve tones (middle, f1 to f12 ) surrounding ft .
+Placebo stimulation (bottom, G5) is formed similar to G1 using a down-shifted stimulation-frequency fp (fp = 0.7071·ft / (2n ), fp within [300 Hz,
+600 Hz]) outside the synchronized tinnitus focus.
+band of the stimulation tones measured by an audio-
+gram from 0.125 to 12 kHz) were randomly allocated
+to receive CR neuromodulation (group G1 to G4) or
+placebo stimulation (G5): G1 (n = 22), G2 (n = 12), G3
+(n = 12), G4 (n = 12), G5 (n = 5), see Table 1. Cen-
+tral randomization was provided by a clinical research
+organization (CRO). The randomization scheme was
+computer generated utilizing a block randomization.
+The assignment of treatments occurred in accordance
+with the numerical sequence of patient enrolment using
+sealed envelopes. A higher number of patients was allo-
+cated to G1 to corroborate the database for its suspected
+most efficacious stimulation algorithm.
+Exclusion criteria were: Morbus Meniere, audi-
+tory hallucinations, symptomatic hearing disorders,
+tinnitus due to temporomandibular joint disorders,
+brainstem diseases, psychiatric disorders and objec-
+tive tinnitus. The ethical committee approved the trial
+design and all changes. The safety of the study was
+monitored by an independent Data and Safety Mon-
+itoring Board (DSMB). The study was performed in
+accordance with the Declaration of Helsinki and Good
+Clinical Practice guidelines. All participating patients
+gave their written informed consent.
+2.2. Tinnitus characteristic analysis
+The tinnitus frequency ft (from 100–10.000 Hz) was
+assessed with a pure tone matching, where intensity
+and frequency of the matching tone were controlled
+by the patient.
+2.3. Study design
+Patients were stimulated for 12 weeks using a
+portable acoustic device and comfortable earphones
+(loudness controlled by patient) followed by an addi-
+tional off-stimulation 4-week period to assess lasting
+P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+ 141
+Table 1
+Baseline data
+Gl (n = 22)
+Age [mean (SD)]
+ 45.7 (10.8)
+Sex (male %)
+ 72.7
+BMI (kg/m2 ) [mean (SD)]
+ 26.1 (5.2)
+Smoke (yes %)
+ 27.3
+Social drinking (yes %)
+ 77.3
+Tinnitus duration (in years) [mean (SD)]
+ 5.7 (5.1)
+Tinnitus side (unilateral %)
+ 45.5
+VAS Loudness [mean (SD)]
+ 70.9 (14.9)
+VAS Annoyance [mean (SD)]
+ 66.4 (17.3)
+TQ [mean (SD)]
+ 43.1 (16.7)
+Tinnitus frequeny (kHz) [mean (SD)]
+ 7.7 (2.9)
+EEG ␦ power (a.u.) [mean (SD)]
+ 0.23§ (0.11)
+EEG ␣ power (a.u.) [mean (SD)]
+ 0.37§ (0.2)
+§ EEG analysis: n = 21 (11) were evaluable in Gl (G2).
+G2 (n = 12)
+47.7 (5.6)
+83.3
+27.7 (4.2)
+25.0
+66.7
+6.6 (6.0)
+33.3
+52.1 (21.5)
+54.2 (21.6)
+38.6 (15.9)
+5.0 (2.5)
+0.27§ (0.13)
+0.32§ (0.19)
+G3 (n = 12)
+50.0 (14.7)
+50.0
+26.8 (4.3)
+16.7
+66.7
+5.4 (3.5)
+50.0
+66.3 (20.4)
+64.2 (22.0)
+36.5 (16.4)
+4.7 (3.5)
+0.26 (0.09)
+0.34 (0.21)
+G4 (n = 12)
+50.3 (11.8)
+75.0
+25.7 (3.6)
+0.0
+75.0
+7.9 (9.8)
+16.7
+72.1 (16.7)
+70.8 (17.0)
+50.8 (15.9)
+5.4 (3.3)
+0.22 (0.10)
+0.36 (0.17)
+G5 (n = 5)
+57.6 (6.3)
+60.0
+25.3 (4.0)
+40.0
+100.0
+11.3 (5.6)
+40.0
+43.0 (19.2)
+38.0 (14.8)
+29.2 (7.7)
+5.8 (3.4)
+0.24 (0.1)
+0.35 (0.17)
+effects of acoustic CR neuromodulation; an optional
+ 2.4. Euclidean distance of normalized clinical
+open-label long-term extension (LTE) period (24
+ scores
+weeks) was offered. Visits took place 1, 4, 8, 12 and 16
+weeks after beginning of treatment and every 4 weeks
+ The Euclidean distance was calculated based on the
+during LTE.
+ normalized clinical scores (VASLoudness , VASAnnoyance
+Tinnitus loudness and annoyance were first mea-
+ and TQ). The Euclidean distance d between two sub-
+sured off-stimulation (at least 2.5 hours after
+ groups of n patients was defined as
+
+1 n n 2  l
+ k
+ 2 
+ l
+ k
+ 2  l
+ k 2
+2
+ l=1
+ k=1
+ VAS  Loudness −VAS
+  Loudness
+ + VAS
+  Annoyance
+ − VAS
+  Annoyance
+ + TQ
+  − TQ
+  =: d
+n
+where VAS
+Loudness  l
+ (VASLoudness  k
+ ) denote the normal-
+ized value of the VASLoudness score for patient l (k) from
+cessation of CR neuromodulation) and consecutively
+the first (second) subgroup, respectively (similarly for
+on-stimulation (15 min after turning on CR neuromod-
+VASAnnoyance and TQ). Normalization, i.e. division by
+ulation) by a visual analog scale (VAS). VAS scales
+the maximal value, was performed in order to achieve
+ranged from 0 (corresponding to absence of tinnitus)
+a uniform weighting of all three clinical scores.
+to 100 (corresponding to maximal imaginable loud-
+ness or annoyance). The tinnitus distress level was
+captured by the German version of the Tinnitus Ques-
+ 2.5. Stimulation protocol
+tionnaire (TQ, measured off-stimulation) (Goebel and
+Hiller, 1994). The TQ is a patient reported measure
+ G1 to G3 all received stimulation for 4–6 hours every
+of 52 items assessing emotional and cognitive dis-
+ day (Fig. 1b) applied either continuously or split into
+tress, intrusiveness, auditory perceptual difficulties,
+ several sessions not shorter than 1 hour each to uti-
+sleep disturbances and associated somatic complaints.
+ lize cumulative effects (Jacobson and Truax, 1991);
+The TQ is a highly reliable (test-retest reliability 0.94)
+ G4 and G5 all received stimulation for 1 hour max.
+and valid instrument with scores ranging from 0 to
+ every day. Stimulation signals were generated based on
+84 (Goebel and Hiller, 1998). Like the VAS loud-
+ a specific formula reflecting the logarithmic tonotopic
+ness and VAS annoyance, higher scores on the TQ
+ organization of the auditory cortex and on the matched
+reflect greater severity. Mean values and standard
+ tinnitus (frequency ft ) with an equal number of tones
+deviations are given. Auditory thresholds were mea-
+ placed below and above tinnitus frequency (except for
+sured by an audiogram (performed at 0.125, 0.25, 0.5,
+ placebo, Fig. 1b). Stimulation tones were equally loud
+0.75, 1, 1.5, 2, 3, 4, 6, 8, 12 kHz) in a sound-proof
+ and just super-threshold. 4 tones per cycle were played
+chamber.
+ in random order with 3 stimulation cycles followed by
+142
+ P.A. Tass et al. / Counteracting tinnitus by acoustic2 silent cycles (Fig. 1a). The silent cycles were intro-
+duced in order to optimize the duration of the transient
+desynchronization and, hence, the anti-kindling effect
+(see Tass, 2003; Lysyansky et al., 2011). The 4 tones are
+based on a patient specific list of frequencies, see Fig. 1:
+G1, G3, G4 (f1 to f4 ); G2 (prior to each cycle 4 frequen-
+cies are chosen from f1 to f12 ); G5 based on a modified
+tinnitus frequency (fp = 0.7071 ft /(2n ), fp within 300 to
+600 Hz). The stimulation tones are equidistantly placed
+on a logarithmic scale within the interval [0.5·ft , 2·ft]
+for G1 to G4 and within [0.5·fp , 2·fp] for G5. Cycle
+repetition rate was 1.5 Hz, i.e. in the lower ␦ frequency
+range, for G1, G2, G4, G5, because the primary tar-
+get for desynchronization was the pathological ␦ band
+activity. We have chosen the repetition rate within the
+lower ␦ frequency range because according to theoret-
+ical studies it is more favorable to use a stimulation
+rate that is slightly to low instead of being slightly
+too high (see Tass, 2003; Lysyansky et al., 2011).
+Also, psychophysically greater repetition rates were
+perceived as less relaxing and, hence, less convenient.
+In contrast, in G3 the repetition rate was set equal to
+the peak frequency in the patient’s ␦ frequency range
+according to the EEG data (Tass, 2003; Tass et al.,
+2009).
+A readjustment of stimulation parameters could be
+done at each visit if matched tinnitus frequency had
+changed.
+2.6. EEG data
+Every patient underwent two EEG recording ses-
+sions: on the first treatment day before treatment began
+and at the 12 weeks visit, at least two hours after the end
+of the last stimulation session. EEG recordings were
+obtained in a Faraday cage with a 128 EEG surface
+electrodes system (128 channel HydroCel Geodesic
+Sensor Net) in a quiet and dimly lighted room with
+each participant sitting upright on a comfortable chair.
+All electrodes were referenced to Cz. Recordings were
+performed twice in awake patients with eyes closed
+and eyes open for 2 min each. We have selected eyes
+closed data for further analysis since they were less
+affected by artifacts. Impedances were kept below 100
+k as required by the EEG recording system. EEG
+signals were digitized at 1 kHz and digitally filtered
+with a 0.8–130 Hz digital filter. Each EEG recording
+was corrected for blink and eye movements in BESA
+using a surrogate model approach from BESA (Scherg
+coordinated reset neuromodulation
+et al., 2002) (Brain Electrical Source Analysis, MEGIS
+Software, version 5.2). Recordings were further ana-
+lyzed in MATLAB (The Mathworks, Natick, MA)
+using EEGLAB (http://sccn.ucsd.edu/eeglab) where
+muscle artifacts and artifacts from heart activity (elec-
+trocardiogram) were removed. The total eyes closed
+recording after artifact correction lasted on average
+3 min 36 sec ± 24 sec. Two types of inverse calcula-
+tion of the surface EEG signals were performed: (i)
+Surface EEG was transformed into brain source activ-
+ity of the primary auditory cortex (ACI, Brodmann
+area 41) using the source montage approach in BESA
+for G1 (n = 21 evaluable) and G5 (n = 5). According to
+previous studies (Mühlnickel et al., 1998; Lockwood
+et al., 1998; Lockwood et al., 1999; Melcher et al.,
+2000; Kovacs et al., 2006; Smits et al., 2007; Weisz
+et al., 2007; van der Loo et al., 2009) in patients with
+unilateral tinnitus we used the contralateral ACI, in
+patients with bilateral tinnitus we used both ACI. (ii) In
+patients with bilateral tinnitus surface EEG was trans-
+formed into current source density with sLORETA
+(Pascual-Marqui, 2002), where the three-dimensional
+solution space was restricted to the cortical gray mat-
+ter. Unilateral and bilateral tinnitus patients can have
+different EEG abnormalities (Vanneste et al., 2011).
+Accordingly, to avoid an influence of such differ-
+ences, we selected only patients with bilateral tinnitus
+(n = 28) from G1 to G4. To increase the signal-to-
+noise ratio from this population of 28 patients with
+bilateral tinnitus 12 patients were selected for the
+sLORETA analysis following the TQ based reliable-
+change-index (RCI) method (Jacobson and Truax,
+1991). This subgroup of n = 12 patients had the fol-
+lowing demographic and clinical characteristics (mean
+(SD)): age 46.5 (7.9), tinnitus duration 7.6 (7.4), TQ
+at baseline 52.3 (17.5), VASLoudness at baseline 72.1
+(20.7), VASAnnoyance at baseline 71.7 (23.1) and tinni-
+tus frequency 5.9 kHz (3.5). The sLORETA subgroup
+showed the following improvements at 12 weeks:
+TQ –19.5 (9.1), VASLoudness on/off stimulation –37.9
+(35.4)/–26.7 (26.2), VASAnnoyance on/off stimulation
+–41.3 (35.2)/–21.3 (26.6). Images were transformed
+to the stereotactic Talairach space and overlaid with
+a standard, structural MRI scan (MNI152 template).
+Statistical significance of sLORETA changes was non-
+parametrically assessed on a voxel-by-voxel basis with
+a randomization test (Nichols and Holmes, 2002)
+which corrects for multiple comparisons. Finally,
+power spectra were calculated for both types of inverse
+solutions and averaged across patients. Power spec-
+P.A. Tass et al. / Counteracting tinnitus by acoustictra, calculated using fast Fourier transform, were
+divided into normalized EEG frequency bands: ␦
+(1–4 Hz), ␪ (4–8 Hz), ␣ (8–12 Hz), ␤ (12–30 Hz), ␥low
+(30–48 Hz) and ␥high (52–90 Hz). Power spectra were
+averaged across patients, and frequency bands group
+differences between the untreated and treated con-
+ditions were tested with the Wilcoxon signed-rank
+test.
+2.7. Statistical methods
+The statistical analysis was based on an intention-
+to-treat analysis including all randomized subjects.
+The sample size estimation was based on pre-clinical
+observations and empirical considerations. For miss-
+ing values the LOCF method was used (first 16
+weeks).
+Descriptive statistics were used to compare baseline
+to end-of-treatment values (Wilcoxon matched pairs
+performed on non-log-transformed data and Sign
+test). Comparison to placebo was done applying the
+Mann–Whitney U test. Due to the exploratory nature
+we tested two-sided without adjustment for multiple
+comparisons at the 5% significance level. Correlation
+was calculated using the Pearson product-moment
+correlation.
+For sLORETA we assessed statistical significance,
+corrected for multiple comparisons, by means of a non-
+parametric randomization test (Nichols and Holmes,
+2002).
+3. Results
+Clinical examination after 12 weeks of therapy
+revealed a strong (29.6 to 37.3 points) and signifi-
+cant reduction of VAS loudness/annoyance in G1 and
+G3 in the on-stimulation condition (p ≤ 0.01 com-
+pared to baseline, Fig. 2a, Table 2). The effects in
+G1 are significant also compared to placebo (p < 0.05,
+Fig. 2b). In the off-stimulation condition significant
+effects persisted for G1/G3 VAS loudness/annoyance
+(18.0 to 28.8 points, p < 0.004 Fig. 2a, Table 2) in
+accordance with theoretically predicted lasting anti-
+kindling effects. In G2, the noisy CR group, only
+on-stimulation effects showed significant reductions
+(p < 0.05, Fig. 2a, Table 2) and the difference between
+on- and off-stimulation effect was strongest (Fig. 2c,
+p < 0.01). In G4 (reduced stimulation time of 1 h/day)
+we observed a significant decrease for both VAS loud-
+coordinated reset neuromodulation
+ 143
+ness/annoyance scores in the on-stimulation condition
+(p < 0.05) and markedly less in off-stimulation (Fig. 2a,
+Table 2). In contrast, the placebo group G5 showed nei-
+ther on- nor off-stimulation significant changes in VAS
+loudness/annoyance scores after 12 weeks, (Fig. 2a,
+Table 2).
+After a subsequent 4-week therapy pause G1 and
+G3 preserved significant reductions in tinnitus loud-
+ness and annoyance (Fig. 2a, Table 2). In general,
+we found a high correlation between the CR induced
+changes in VAS loudness (VASLoudness) and annoy-
+ance (VASAnnoyance ) i.e. r = 0.92 (baseline to 12
+weeks, p < 0.001, Fig. 2f).
+TQ severity levels significantly improved after 12
+and 16 weeks in G1 (p < 0.01 compared to baseline)
+and G3 (p < 0.05, Fig. 2d, Table 2). In G4, a small but
+significant decrease of the TQ severity levels was seen
+after 12 weeks (p < 0.05, Fig. 2d, Table 2). G5 (placebo)
+did not show any significant change.
+TQ scores (mean values) were significantly reduced
+compared to baseline in G1 to G4 with the strongest
+improvements in G1 and G3 (12/16 weeks, Table 2).
+In contrast, there were no significant changes in TQ
+score in the placebo group G5 (Table 2).
+Tinnitus frequency (pure tone matching) was signif-
+icantly reduced in G1 after 12 and 16 weeks (p < 0.01,
+Table 2), while placebo did not show significant
+changes of tinnitus frequency.
+In all patients with a hearing impairment it was of a
+sensorineural type. Auditory threshold averaged from
+the three frequencies of our audiogram procedure (see
+methods) closest to the tinnitus frequency was 29.8 dB.
+No significant changes in auditory thresholds were
+detected pre/post treatment.
+3.1.1. Impact of tinnitus duration, tinnitus
+severity and age on treatment outcome
+Analyzing for tinnitus duration, tinnitus severity and
+age revealed no confounding factor for treatment suc-
+cess of 4–6 h/day treated CR neuromodulation (CR
+groups G1 + G3 after 12 weeks tinnitus duration in
+years versus relative TQ change r = 0.14, p = 0.43,
+tinnitus severity in TQ versus relative TQ change
+r = –0.16, p = 0.35 and age versus relative TQ change
+r = 0.09, p = 0.62; after 40 weeks for all patients tinnitus
+duration in years versus relative TQ change r = –0.05,
+p = 0.74, tinnitus severity in TQ versus relative TQ
+change r = 0.18, p = 0.19 and age versus relative TQ
+change r = 0.01, p = 0.94).
+144
+P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+Fig. 2. (Continued)
+P.A. Tass et al. / Counteracting tinnitus by acoustic3.1.2. Comparison between placebo group and
+equally sized, matched subgroups of G1
+To better control for the baseline characteristics of
+the placebo group we matched G5 (n = 5) with an
+equally sized subgroup of G1 with comparable base-
+line characteristics (mean TQ exactly 29.2 pts in both
+groups at baseline and VAS scales for loudness and
+annoyance also not significantly different). We found
+a significant improvement compared to baseline (off-
+stimulation) after the first 12 weeks of treatment for
+the G1 subgroup only (VAS loudness G1 sub –24 pts.
+mean, p = 0.07, vs. G5 –9y pts. mean, not significant;
+VAS annoyance G1 sub –23 pts. mean, p = 0.04 vs. G5
+–2 pts. mean, not significant; TQ G1 sub –11.8 pts.
+mean, p = 0.04, vs. G5 –8.4 pts. mean, not significant).
+Furthermore we matched G5 (n = 5) with 100
+equally sized subgroups of G1 with comparable base-
+line characteristics (mean TQ exactly 32.4 pts. at
+baseline (p = 0.67 as compared to G5) and VAS scales
+for loudness and annoyance also not significantly dif-
+ferent). These G1 subgroups were selected from the
+26334 possible combinations of 5 patients in the G1
+subgroup derived from 22 patients in G1 based on the
+shortest Euclidean distance between each G1 sub group
+and G5. Euclidean distances were calculated based on
+the VAS loudness/annoyance and TQ for each G1 sub
+group separately (see Methods). We found a substantial
+improvement as compared to baseline (off-stimulation)
+after the first 12 weeks of treatment for the G1 subgroup
+(VAS loudness G1 sub –22 pts. mean, p = 0.08, vs. G5
+coordinated reset neuromodulation
+ 145
+–9y pts. mean, p = 0.50; VAS annoyance G1 sub –19
+pts. mean, p = 0.08 vs. G5 –2 pts. mean, p = 1.00; TQ
+G1 sub –9.5 pts. mean, p = 0.06, vs. G5 –8.4 pts. mean,
+p = 0.12).
+3.1.3. Pooled comparison between “effective”
+and “ineffective” stimulation groups
+For a robust statistical comparison of all 4–6 h/day
+CR treated patients with the rest of the patients we
+pooled two big groups with comparable sizes: the
+“effective stimulation group” G1 + G3 (n = 34) was
+compared with the “ineffective stimulation group”
+comprising all data of G2 (“noisy” stimulation with a
+masker effect but without lasting off-effect), G4 (only
+1 h of CR neuromodulation per day leading to smaller
+improvements) and G5 (the placebo group) with n = 29
+patients, see Table 4.
+As a result, after 12 weeks of stimulation VAS
+loudness (p = 0.0009, p = 0.0186), VAS annoyance
+(p = 0.0021, p = 0.0488) and TQ (p = 0.0076) all
+showed markedly higher improvements in the “effec-
+tive stimulation group” compared to the “ineffective
+stimulation group” (for on-, off-stimulation if appli-
+cable). Notably, the improvements in tinnitus severity
+and loudness were accompanied by a significant and
+pronounced shift in tinnitus frequency in the pooled CR
+neuromodulation group (between –16.5% and –22.2%
+average Tinnitus frequency shift in % of baseline)
+but not for the pooled “ineffective stimulation group”
+(between +2.4% and –2.6 % average tinnitus frequency
+shift in % of baseline), see Table 4.
+Fig. 2. Clinical effects of acoustic CR neuromodulation assessed in the framework of the RESET study. (a) Visual analogue scale (VAS) scores
+for loudness (left) and annoyance (right) for group 1 to 5. The VAS scores are displayed at baseline (0) and at 4, 12 and 16 weeks. The black (red)
+lines indicate the VAS scores obtained during off-stimulation (on-stimulation). The gray shaded area indicates the 12 weeks treatment phase,
+followed by a treatment pause of 4 weeks. The stars indicate significant results as compared to baseline. Acoustic CR neuromodulation induced a
+significant long-lasting reduction of VAS scores (off-stimulation, black) for therapy groups 1 and 3 while groups 2, 4 and 5 (placebo stimulation)
+showed no significant long-lasting treatment effects. Additionally, therapy groups 1 to 4 showed strong beneficial effects during stimulation
+(on-stimulation, red). (b) Changes of the VAS scores for loudness (left) and annoyance (right) with respect to baseline for the 12-week visit (left
+side of each plot) and the 16-week visit (right side of each plot) are given. The scores are plotted for off-stimulation (top) and on-stimulation
+(bottom) for G1 to G5 (from left to right). The stars indicate significant results as compared to placebo. Since at 16-week visit placebo (G5)
+started to receive G1 treatment, no data for on-stimulation was available. (c) On/Off-treatment effects (VASon −VASoff ) at 12 weeks are
+given. The stars indicate significant results as compared to placebo. (d) Tinnitus related distress level based on the tinnitus questionnaire (TQ,
+ranging from 0 to 84 points) is given (Goebel and Hiller 1998). Subjects are grouped into four severity levels: very severe (60–84, black),
+severe (47–59, dark gray), moderate (31–46, light gray) or mild (0–30, white). TQ severity level distribution is displayed at baseline, 12 and
+16 weeks. Improvement in tinnitus severity level distribution was significant for G1 (p < 0.01), G3 and G4 (p < 0.05), but not for placebo (G5)
+(stars indicate significant results as compared to baseline, Sign-nonparametric test, p-values (12/16 weeks): G1 0.0002/0.0003, G2 : 0.48/—-,
+G3 : 0.023/0.041, G4 : 0.041/0.08, G5 : 0.48/—-; —-: test not applicable due to no level variation). (e) Treatment induced changes in oscillatory
+EEG activity (off-stimulation). EEG activity for G1 (top) and placebo (bottom) was assessed at baseline (white) and at 12 weeks (gray). The
+normalized EEG power in the ␦ and ␣ band is shown for G1 (n = 21 evaluable) and G3 (n = 5). Stars indicate significant results as compared
+to baseline. (f) Correlation between VASLoudness and VASAnnoyance. VAS-values are calculated for the 12-week visit (off-stimulation)
+compared to baseline. Changes of tinnitus loudness and annoyance are strongly and significantly correlated (r = 0.92, p < 0.001). Dashed lines
+indicate 95% confidence levels. For all plots: mean values (a–c, e) and TQ grouping (d) is shown, *p < 0.05, **p < 0.01.
+146
+Table 2
+Change from baseline to end of treatment phase (12 week follow up) and after the 4 weeks treatment pause (16 week follow up) in primary efficacy outcomes and EEG
+Treatment-group
+Follow-up (week)
+G1 (n = 22)
+ G2 (n = 12)
+ G3 (n = 12)
+ G4 (n = 12)
+ G5 (n = 5)
+12
+ 16
+ 12
+ 16
+ 12
+ 16
+ 12
+ 16
+ 12
+ 16
+VAS Loudness
+Change from baseline
+ –21.8 (19.2) –17.0 (22.8) –2.1 (21.7)
+ 2.1 (22.4) –25.8 (25.3) –18.3 (26.8) –6.7 (15.3)
+ –6.7 (11.5) –9.0 (18.8) –1.0 (28.8)
+ . PA(off-stimulation) [mean (SD)]
+ .Tp value (change from baseline§§§)
+ <0.0001
+ 0.0010
+ 0.8438
+ 0.8516
+ 0.0039
+ 0.0293
+ 0.2969
+ 0.0742
+ 0.5000
+ 0.8750
+ s s aChange from baseline
+ –37.3 (24.7) –37.3 (25.1) –21.3 (25.3)
+ n.a.§§
+ –29.6 (30.0)
+ n.a.§§
+ –18.8 (23.7) –22.1 (27.2) –9.0 (18.8)
+ n.a.§§
+ e ta(on-stimulation) [mean (SD)]
+ l .p value (change from baseline§§§)
+ <0.0001
+ <0.0001
+ 0.0195
+ 0.0078
+ 0.0254
+ 0.0156
+ 0.5000
+ / CoVAS Annoyance
+ u ntChange from baseline
+ –18.0 (17.2) –11.4 (24.2) –4.2 (24.6)
+ –5.0 (22.3) –28.8 (27.0) –20.4 (26.7) –7.5 (16.7)
+ –5.0 (18.5) –2.0 (16.4) 2.0 (33.5)
+ e ra(off-stimulation) [mean (SD)]
+ c tp value (change from baseline§§§)
+ 0.0001
+ 0.0381
+ 0.6113
+ 0.5830
+ 0.0039
+ 0.0215
+ 0.2813
+ 0.3828
+ 1.0000
+ 1.0000
+ g n iChange from baseline
+ –32.7 (23.2) –33.2 (22.8) –22.1 (33.5)
+ n.a.§§
+ –31.7 (33.3)
+ n.a.§§
+ –18.8 (23.7) –21.3 (28.1) –8.0 (13.0)
+ n.a.§§
+ i t nn(on-stimulation) [mean (SD)]
+ i tup value (change from baseline§§§)
+ <0.0001
+ <0.0001
+ 0.0566
+ 0.0103
+ 0.0195
+ 0.0195
+ 0.5000
+ s byTQ score
+ acChange from baseline
+ –12.4 (8.9) –12.3 (10.9)
+ –5.2 (8.0)
+ –6.2 (8.1) –15.5 (15.1) –17.7 (17.5)
+ –8.6 (7.0)
+ –10.5 (10.6) –8.4 (7.1) –9.2 (10.5)
+ ou(off-stimulation) [mean (SD)]
+ s t ip value (change from baseline§§§)
+ <0.0001
+ <0.0001
+ 0.0273
+ 0.0166
+ 0.0068
+ 0.0024
+ 0.0029
+ 0.0068
+ 0.1250
+ 0.2500
+ o c coTinnitus frequency
+ rdRelative change from baseline
+ –28.5 (18.3) –21.8 (65.8) –4.8 (35.4) –11.7 (26.6) –10.6 (53.9) –6.8 (56.6)
+ 14.8 (43.7)
+ 10.2 (47.2) –9.7 (6.2) –11.6 (8.0)
+ i na(off-stimulation) [mean % (SD)]
+ t ep value (change from baseline§§§)
+ 0.0001
+ <0.0001
+ 0.5693
+ 0.3804
+ 0.0640
+ 0.0425
+ 0.5186
+ 0.8984
+ 0.0625
+ 0.0625
+ d r eEEG ␦ power
+ s e tChange from baseline
+ –0.065§ (0.084)
+ –0.002§ (0.021)
+ –0.071 (0.032)
+ –0.0008 (0.009)
+ 0.0002 (0.07)
+ n eu(off-stimulation) [mean (SD)]
+ r op value (change from baseline§§§ )
+ 0.0007
+ 0.2500
+ 0.0170
+ 0.2750
+ 0.89
+ m odEEG ␣ power
+ u lChange from baseline
+ 0.11§ (0.12)
+ 0.009§ (0.033)
+ 0.13 (0.09)
+ 0.007 (0.028)
+ –0.0095 (0.1)
+ a t i on
+(off-stimulation) [mean (SD)]
+p value (change from baseline§§§ )
+ 0.0007
+ 0.3400
+ 0.0030
+ 0.2500
+ 0.89
+§For the EEG analysis n = 21 (11) patients were considered in Gl (G2); the data of two patients was missing.
+§§16-week measurements of VAS Loudness and Annoyance in the on-stimulation condition were done for Gl and G4 only. Therefore, for G2, G3 and G5 this test was not applicable (n.a.).
+§§§Wilcoxon matched pairs test.
+P.A. Tass et al. / Counteracting tinnitus by acoustic3.1.4. Comparison to masker type of stimulation
+(noisy CR, G2)
+All groups were compared with the “noisy” masker
+like stimulation (G2) that showed a good on-effect like
+G1 and G3 but no lasting off-effect. After 12 weeks of
+treatment significant differences occurred for TQ in
+favor of G1 (p = 0.0171) and G3 (p = 0.0347), for VAS
+loudness off-stimulation in favor of G1 (p = 0.0166)
+and G3 (p = 0.0330) and for VAS annoyance off-
+stimulation in favor of G3 (p = 0.0233).
+3.1.5. EEG analysis
+Source montage analysis of whole-head EEG mea-
+surements revealed a significant decrease of ␦ band
+power and increase of ␣ band power in the primary
+auditory cortex of G1 (p < 0.01) while no significant
+changes in G5 (placebo) were observed (p = 0.89,
+Fig. 2e, Table 2). Additionally, we determined 3D
+maps of significant changes of oscillatory brain activ-
+ity, using the sLORETA technique, in typical frequency
+bands in 12 patients with bilateral tinnitus taken
+from the stimulation groups G1–G4 (see Methods).
+Reduced levels of ␣ band power were significantly
+increased after 12 weeks of treatment (red voxels,
+p < 0.05, Fig. 3): the widespread bilateral ␣ increase
+was strongest in temporal regions and the entire pre-
+frontal cortex (Fig. 3 and Table 3). Tinnitus-associated
+enhanced ␦ and ␥ activity was significantly reduced
+in a widespread network comprising auditory and
+non-auditory areas (blue voxels, p < 0.05, Fig. 3): ␦
+activity was decreased mainly in temporal and pre-
+frontal regions including the primary and secondary
+auditory cortices. ␪ activity was significantly decreased
+in frontal regions and the anterior cingulate area
+(Brodmann Area (BA) 32). A significant decrease in
+␤ activity was observed in temporal areas, therein
+maximal in the superior temporal gyrus (bilateral,
+BA 41, 42). ␥low activity, i.e. ␥ activity of low fre-
+quency (see Methods), was significantly decreased in
+the temporal and frontal cortex covering wider areas
+in the right prefrontal cortex, while ␥high showed
+a left-centered significant decrease in the temporal
+cortex (maximal in the superior temporal gyrus, BA
+41). All results are displayed in Fig. 3 (red voxels,
+p < 0.05), corresponding Brodmann areas are listed in
+Table 3.
+coordinated reset neuromodulation
+ 147
+3.1.6. Long-term extension
+In LTE (all subjects receiving CR neuromodulation
+like in G1; 58 subjects started, 52 subjects completed
+LTE) already gained treatment effects were sustained
+or even improved further. The overall improvement
+in TQ was 36% (p < 0.0001 t-test, compared to base-
+line). Using the responder analysis by Goebel et al.
+(2006) we found at the end of 40 weeks 40% win-
+ners (TQ improvement ≥ 15 points), 35% responders
+(TQ improvement 6–14 points), 23% non-responders
+(TQ unchanged ± 5 points) and 2% losers (TQ wors-
+ening ≥ 6 points).
+3.1.7. Safety
+15 AEs occurred in total: 13 AEs during blinded
+phase, 2 AEs in LTE. Two SAEs (an abdominal preg-
+nancy and avascular necrosis of the femoral head, not
+associated with treatment) were reported. All other
+AEs were of mild to moderate intensity and none
+was permanent. 8 AEs were judged to be treatment
+related of which 3 AEs were associated with a tran-
+sient increase of tinnitus loudness; all three patients
+continued treatment into the LTE.
+4. Discussion
+4.1. Clinical effects
+We showed that acoustic CR neuromodulation was
+safe and well-tolerated. We found a significant and
+clinically relevant concordant strong decrease of VAS
+scores (loudness and annoyance), TQ scores and TQ
+severity levels. Improvements persisted a preplanned
+4-week therapy pause on a slightly reduced, but sig-
+nificant level, regaining the reduction in VAS after
+continuation of the CR therapy and showing sustained
+long-term effects during the LTE. At the end of LTE (at
+40 weeks) we observed 75% winners and responders
+with a mean TQ reduction of 50%. A similar reduction
+of tinnitus distress, i.e. 70% of winners/responders in
+TQ after 6 months of acoustic CR neuromodulation,
+was shown in a cohort of seventy “real life” patients
+suffering from chronic tonal tinnitus in an outpatient
+setting (TRI Tinnitus Conference 2011, Buffalo, USA,
+Abstract H. Wurzer). In contrast, when treated with
+148
+ P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+Fig. 3. Electrophysiological effects of acoustic CR neuromodulation assessed in the framework of the RESET study. 3D mapping of treatment
+induced changes in oscillatory EEG activity (baseline compared to 12 weeks, off-stimulation). To increase signal-to-noise ratio 12 patients
+with bilateral tinnitus (from G1 to G4) were selected using reliable-change-index (RCI) applied to improvements of TQ scores. Statistical
+non-parametric maps from sLORETA (Pascual-Marqui, 2002) for the localization of changes of ␦, ␪, ␣, ␤, ␥low and ␥high current source density
+are given. Results are superimposed onto a three-dimensional brain (first three columns) and onto a horizontal brain section (right column)
+of a standard anatomical template. Significantly decreased activity after acoustic CR neuromodulation compared to baseline is labeled blue,
+increased activity is labeled red (corrected, p < 0.05).
+noisers and maskers only a minority of patients experi-
+ences tinnitus-suppressing after-effects, and these last
+only seconds to minutes (Surr et al., 1985; Roberts et
+al., 2010). Comparing the active arms, CR therapy was
+more efficacious when used 4–6 h/d compared to 1 h/d,
+and the results of noisy CR neuromodulation (G2)
+were less efficacious and importantly lacked a last-
+ing off–stimulation effect resembling the typical short
+P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+ 149
+Table 3
+Significant effects of acoustic CR neuromodulation on the EEG activity (baseline compared to 12 week follow up). The Brodmann areas where
+significant changes were observed are listed. Arrows indicate the effect of the treatment (↓: decrease, ↑: increase, corrected, p < 0.05). Changes
+were localized using statistical non-parametric maps from sLORETA (Pascual-Marqui, 2002)
+Band
+␦
+Frequency
+range
+1–4 Hz
+␪
+␣
+4–8 Hz
+8–12 Hz
+␤
+␥low
+␥high
+12–30 Hz
+30–48 Hz
+52–90 Hz
+Effect
+⏐
+
+⏐
+
+⏐
+⏐
+
+⏐
+
+⏐
+
+Left
+Prefrontal 46, 47
+Orbilo frontal 11
+Frontal 44
+Prefrontal 47
+Temporal 38
+Parietal 39
+Temporal 37
+Occipital 18, 19
+Piriform 27
+Parahimpocampus
+30
+Precentral 4
+Prefrontal 9
+Frontal 45, 47
+Occipital 19
+Bilateral
+Position
+Postcentral 1, 2; Precentral 4
+Prefrontal 6, 8, 9, 10; Insula 13
+Occipital 18, 19; Fusiform 20
+Temporal 21, 22, 28, 37, 38, 39, 41, 42
+Cingulate cortex 23, 31, 29
+Parahippocampus 30, 36
+Subcentral 43; Frontal 45
+Prefrontal 9, 10; Orbitofrontal 11
+Anterior cingulate 32
+Postcentral 1, 2, 3; Precentral 4
+Prefrontal 6, 8, 9, 10, 46; Parietal 7;
+Orbitofrontal 11, 47; Insula 13
+Occipital 17, 18, 19; Fusiform 20
+Temporal 21, 22, 28, 34, 35, 37, 38, 39, 41, 42
+Posterior cingulate 23, 31
+Anterior cingulate 24, 32, 33
+Frontal 25, 44, 45; Piriform 27
+Cingulate cortex 29; Parahippocampus 30, 36
+Parietal 40; Subcentral 43
+Postcentral 2; Parietal 40
+Frontal 47; Fusiform 20
+Temporal 21, 22, 41, 42
+Postcentral 1, 2; Precentral 4
+Prefrontal 6, 8, 9, 10, 46, 47; Orbitofrontal 11
+Insula 13; Fusiform 20
+Temporal 21, 22, 35, 37, 41
+Parahimpocampus 36; Frontal 44, 45, 47
+Insula 1 3
+Temporal 21, 22, 41, 42
+Subcentral 43, 44
+Right
+Parietal40
+Prefrontal 10
+Orbitofrontal 11
+Occipital 17, 18
+Temporal 28
+Parietal 40
+Postcentral 1,2
+Temporal 20
+Parietal 40
+term effects of noisers or maskers (Terry et al., 1983).
+In contrast, placebo treatment showed limited and non-
+significant changes for VAS scores and TQ, which were
+in the range of previously reported effects of inpa-
+tient treatment including cognitive behavioral therapy
+(CBT, Goebel et al., 2006). This could be indicative of a
+“true” placebo effect in our study; oftentimes instead of
+placebo groups “waiting list control groups” are used
+that sometimes improve slightly on tinnitus specific
+measurements (Hesser et al., 2011) but studies have
+also shown no change or even worsening of the waiting
+list control group over time (Caffier et al., 2006).
+The placebo group tended to be older and had a
+longer lasting tinnitus with lower VAS and TQ scores
+at baseline. However, tinnitus patients with a longer
+tinnitus duration (>4 years) benefited in the same order
+of magnitude as patients with shorter tinnitus duration
+(<4 years) indicating that CR effect is independent of
+tinnitus duration. The cutoff of 4 years was chosen,
+since MEG studies (Schlee et al., 2009b) and EEG
+studies (Vanneste et al., 2011) indicate a differential
+pattern of cerebral activity and connectivity in patients
+with shorter tinnitus duration (<4 years) as opposed
+to longer tinnitus duration (>4 years). This seems
+to differentiate acoustic CR Neuromodulation from
+repetitive transcranial magnetic stimulation (rTMS)
+and neurofeedback training for tinnitus where studies
+showed a reduction of treatment effects with increasing
+tinnitus duration (Langguth et al., 2003; Frank et al.,
+2010; Schlee et al., 2009b; Dohrmann et al., 2007a).
+Additionally, no correlation was found between age
+and treatment effect analyzing 12-week treatment of
+150
+ P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+Table 4
+Comparison of the pooled groups Gl & G3 (n = 34, with 4–6hours/day acoustic CR Neuromodulation, “effective treatment groups”) and G2, G4
+& G5 (n = 29, “ineffective treatment groups”). The change from baseline to end of treatment phase (12 week follow up) and after the 4 weeks
+treatment pause (16 week follow up) in primary efficacy outcomes
+Pooled-groups
+Follow-up (week)
+G1 & G3 (n = 34)
+12
+ 16
+G2, G4 & G5 (n = 29)
+12
+ 16
+VAS Loudness
+Change from baseline (off-stimulation) [mean (SD)]
+p value (change from baseline## )
+Change from baseline (on-stimulation) [mean (SD)]
+p value (change from baseline## )
+VAS Annoyance
+Change from baseline (off-stimulation) [mean (SD)]
+p value (change from baseline## )
+Change from baseline (on-stimulation) [mean (SD)]
+p value (change from baseline## )
+TQ score
+Change from baseline (off-stimulation) [mean (SD)]
+p value (change from baseline## )
+Tinnitus frequency
+Relative change from baseline (off-stimulation) [mean % (SD)]
+p value (change from baseline## )
+–23.2 (21.2)
+ –17.5 (23.9)
+ –5.2 (18.3)
+<0.0001
+ 0.0003
+ 0.1752
+–34.6 (26.5)
+ n.a.#
+ –18.1 (23.3)
+<0.0001
+ 0.0008
+–21.8 (21.4)
+ –14.6 (25.1)
+ –5.2 (19.8)
+<0.0001
+ 0.0027
+ 0.2513
+–32.4 (26.7)
+ n.a.#
+ –18.3 (26.7)
+<0.0001
+ 0.0018
+–13.5 (11.3)
+ –14.2 (13.6)
+ –7.1 (7.3)
+<0.0001
+ <0.0001
+ <0.0001
+–22.2 (35.5)
+ –16.5 (62.3)
+ 2.4 (36.9)
+<0.0001
+ <0.0001
+ 0.5377
+–2.1 (19.6)
+0.5677
+n.a.#
+–3.8 (22.3)
+0.3986
+n.a.#
+–8.5 (9.5)
+0.0002
+–2.6 (35.8)
+0.3389
+# 16-week measurements of VAS Loudness and Annoyance in the on-stimulation condition were done for Gl and G4 only. Therefore, for G2,
+G3 and G5 this test was not applicable (n.a.).
+## Wilcoxon matched pairs test.
+all 4–6 h/day CR treated patients and analyzing of all
+patients after 40 weeks of treatment with CR.
+Furthermore, using the classification by (Goebel
+and Hiller, 1998), we observed that the relative change
+in TQ score, i.e. the differences compared to baseline,
+was in the same order for more severely impaired (so
+called “decompensated” tinnitus, TQ > 46) as for less
+severely impaired patients (so called “compensated”
+tinnitus, TQ ≤ 46). Analyzing for tinnitus severity
+in the 12 weeks and 40 weeks 4–6 h/day CR-treated
+patients likewise did not reveal baseline TQ score
+as confounding factor for tinnitus success (see result
+section).
+Remarkably, reduction of tinnitus loudness and
+reduction of tinnitus annoyance, as measured with
+VAS, were highly correlated in the RESET trial. This
+is in line with Tyler et al. (2007) who were able to
+show a correlation between loudness and annoyance.
+Furthermore, we found a robust correlation between
+the reduction of tinnitus loudness and reduction of TQ
+scores (relative values, r = 0.43, p < 0.001).
+The pronounced and sustained reduction of the sub-
+jective loudness of tinnitus is an effect of acoustic
+CR neuromodulation which has not been observed
+for instance with cognitive behavioural therapy (CBT)
+(Martinez-Devesa et al., 2010; Goebel et al., 2006).
+CR therapy significantly decreased tinnitus frequency
+whereas placebo did not, indicative of neuroplastic
+changes induced by CR neuromodulation.
+4.2. EEG changes
+After 12 weeks of acoustic CR neuromodulation
+pathologically elevated ␦ and ␥ activity were both
+decreased in primary and secondary auditory cortex
+as well as in frontal brain areas. Concomitantly, tin-
+nitus related reduction of ␣ activity was reversed and
+enhanced ␣ activity reoccurred in auditory and pre-
+frontal areas.
+An altered pattern of ongoing oscillatory activ-
+ity in the auditory cortex represents the underlying
+neural code of tinnitus. Enhancements in the ␥ fre-
+quency band, which can be assumed to be a sign of
+enhanced synchronized firing of neurons, are involved
+in the formation of phantom perceptions such as
+tinnitus (Weisz et al., 2007). Attempts to modify
+ongoing spontaneous oscillatory activity and measure
+changes in the perception or, manipulate the tinnitus
+and observe concomitant changes in brain activity can
+both be successful as tinnitus therapy. The first strat-
+egy was tested using neurofeedback normalizing the
+spontaneous activity pattern by enhancing ␣ power
+and reducing ␦ power. Concomitant changes in both
+bands lead to the greatest reductions of tinnitus loud-
+P.A. Tass et al. / Counteracting tinnitus by acousticness (Dohrmann et al., 2007b). The other strategy of
+reducing the intensity of the tinnitus and to observe
+whether concomitant changes occur in the electrophys-
+iological activity was carried out in this study with
+acoustic CR neuromodulation.
+The EEG pattern of our patients prior to treatment
+resembles previous findings by Weisz et al. (2005a)
+who showed a marked reduction of ␣ along with an
+enhancement of ␦ frequency power in tinnitus patients
+particularly in temporal regions. In our study we addi-
+tionally found ␣ reduction and ␦ enhancement in
+associative and limbic areas (prefrontal and cingu-
+late). Functional connectivity of these areas has been
+described as basis for impairment and many secondary
+tinnitus symptoms (Llinás et al., 1999; Tyler, 2006;
+Schlee et al., 2009b; Moazami-Goudarzi et al., 2010;
+Rauschecker et al., 2010). These findings are in line
+with the notion of Llinás et al. (1999) and Jeanmonod
+et al. (1996), that clinical symptoms, e.g., neurogenic
+pain, tinnitus, abnormal movements, epilepsy and cer-
+tain neuropsychiatric disorders, are associated with
+low frequency rhythmic bursting activity.
+Neuromagnetic changes caused by maskers in
+chronic tinnitus sufferers (Kahlbrock and Weisz,
+2008) showed a decrease of slow-wave spontaneous
+brain activity from pre- to post-stimulation caused by
+residual inhibition (RI), i.e. a suppression of pathologic
+neuronal activity. The corresponding suppression of
+tinnitus extends only seconds or minutes beyond the
+duration of the direct stimulation. In contrast, acoustic
+CR neuromodulation decreases the slow-wave (␦)
+activity by desynchronization leading to long-lasting
+therapy induced changes of spontaneous EEG activity
+after 12 weeks of therapy measured in the off-state,
+namely a ␦ reduction and ␣ enhancement, indicative
+of neuroplastic changes by acoustic neuromodulation,
+modifying the neuronal correlates of tinnitus in these
+areas in our patients (Weisz et al., 2005a; Dohrmann
+et al., 2007a). So we here focus the outcome measures
+on assessing the impact of the treatment based on the
+neurophysiological pathway of tinnitus as suggested
+by the Cochrane collaboration (Martinez-Devesa et
+al., 2010).
+4.3. Long-lasting therapy induced changes
+In our study the decrease of tinnitus frequency, EEG
+changes and persistence of clinical improvement dur-
+ing the 4-week therapy pause (instead of complete
+wash-out) might be indicative of neuroplastic changes.
+coordinated reset neuromodulation
+ 151
+In computational studies it was shown that CR neuro-
+modulation induces a long-lasting desynchronization
+mediated by an unlearning of synaptic connectiv-
+ity (Tass and Majtanik, 2006; Hauptmann and Tass,
+2007; Tass and Hauptmann, 2009; Tass and Popovych,
+2012). The EEG changes and the persistence of clin-
+ical improvement during the 4-week therapy pause
+observed in our study are in accordance to the predic-
+tions of these computational studies. However, given
+the results presented here, we cannot prove that in the
+tinnitus patients CR works as shown computationally,
+i.e. by means of a sequential phase reset of neuronal
+sub-populations (Tass, 2003). Accordingly, in a forth-
+coming EEG study we shall investigate whether and, if
+so, in which cortical areas single tones induce a phase
+reset of pathological rhythms, whereas CR stimuli (i.e.
+time-shifted sequences of phase resetting tones) cause
+a desynchronization (i.e. a decrease of the power in
+pathological frequency bands).
+This forthcoming study might be helpful to further
+reveal the mechanism underlying our therapy.
+Based on the data presented here, we cannot rule out
+that a qualitatively different mode of action might lead
+to the observed long-lasting clinical and electrophysi-
+ological changes.
+In fact, the acoustic stimulation delivered to our
+patients might have primarily changed the synap-
+tic connectivity which, in turn, might have caused a
+decrease of neuronal synchronization. Also, the mech-
+anism underlying residual inhibition (RI, Feldmann,
+1971; Hazell and Wood, 1981; Terry et al., 1983) is not
+yet understood. Long-lasting RI, observed e.g. after 15-
+min masking periods, occurs only in a small percentage
+of patients (Hazell and Wood, 1981). Accordingly, the
+significant off-stimulation effects outlasting the treat-
+ment pause of four weeks which were observed in G1
+can hardly be explained by a RI-related mechanism.
+Mechanisms primarily employing lateral inhibition
+and, hence, a suppression of the tinnitus-related neu-
+ronal synchronization cannot be ruled out based on
+the results presented here. However, such a mech-
+anism would be in contradiction to computational
+results showing that blocking/inhibitory stimulation
+cannot induce an unlearning of synaptic connectiv-
+ity, since the latter requires neurons to be active (Tass
+and Majtanik, 2006; Hauptmann and Tass, 2007; Tass
+and Hauptmann, 2009; Tass and Popovych, 2012).
+A phenomenon that might be related to this issue is
+well-known from electrical deep brain stimulation in
+Parkinson’s disease (PD). High-frequency electrical
+152
+ P.A. Tass et al. / Counteracting tinnitus by acousticdeep brain stimulation (Benabid et al., 1991) has no
+long-lasting clinical effects: PD symptoms reappear
+after cessation of stimulation (Temperli et al., 2003).
+Analogously, PD-related oscillatory ␤ band activity,
+suppressed during stimulation, reemerges after cessa-
+tion of stimulation within seconds (Kühn et al., 2008).
+Another remarkable phenomenon is the tinnitus
+pitch change. This phenomenon has not been predicted
+by our computational studies. In fact, the underlying
+physiological mechanism of the CR-induced tinnitus
+pitch change still remains open. Taking into account
+the tonotopic organization of the primary auditory cor-
+tex, a CR-induced tinnitus pitch change may likely
+correspond to a spatial shift of the tinnitus-related
+focus of synchronized neuronal activity within the pri-
+mary auditory cortex. Based on the dynamical mode
+of action of CR neuromodulation (Tass, 2003; Tass
+and Majtanik, 2006; Hauptmann et al., 2007; Tass and
+Hauptmann, 2009; Tass and Popovych, 2012) such an
+effect might be caused by asymmetries of both the
+stimulation and the network subjected to stimulation:
+(i) In a modeling study (Franosch et al., 2003) on the
+emergence of the Zwicker tone (Zwicker, 1964), i.e.
+an auditory after effect, the impact of a spatial gradient
+of the lateral inhibition in the auditory cortex on the
+neuronal dynamics in the central auditory cortex has
+been analyzed. It turned out that a gradient of the lat-
+eral inhibition has significant impact on the neuronal
+dynamics. In particular, a noise reduction mechanism
+combined with a dominantly unilateral inhibition is
+able to explain the emergence of the Zwicker tone
+(Franosch et al., 2003). Such a gradient of the lat-
+eral inhibition combined with a spatially equidistant
+delivery of acoustic stimuli might be a candidate mech-
+anism causing a spatial shift of the synchronous focus
+in the primary auditory cortex. (ii) In case of a spatially
+well-balanced lateral inhibition asymmetries of the
+alignment of the CR tones (with respect to the patient’s
+individual tonotopic organization of the primary audi-
+tory cortex) might also spatially shift the synchronous
+focus in the primary auditory cortex. Possible mech-
+anisms underlying the shift of the tinnitus frequency
+will be in the focus of forthcoming theoretical and
+experimental studies.
+4.4. Comparison with other therapeutic
+approaches
+Vagus nerve stimulation (VNS) combined with mul-
+tiple tone pairing – an invasive therapy tested so far in
+coordinated reset neuromodulation
+animals – aims at counteracting tinnitus by controlling
+map plasticity (Engineer et al., 2011).
+Another invasive approach to suppress synchronized
+hyperactivity associated with tinnitus has been carried
+out by De Ridder and his group (De Ridder et al.,
+2007): after a complex diagnostic procedure with fMRI
+and neuronavigation-guided trans-magnetic stimula-
+tion (TMS) patients responding to TMS received via
+craniotomy the insertion of an epidurally fixed octopo-
+lar electrode and consequent bipolar stimulation by
+means of a pulse generator. A reduction of tinnitus
+loudness measured by a VAS scale occurred in tonal
+tinnitus whereas in atonal tinnitus the technique failed
+to show significant results. After a while, tinnitus reoc-
+curred in all patients and reorganization of the electrode
+array was necessary (De Ridder et al., 2006).
+Based on initial animal studies tinnitus is proposed
+to be an auditory phantom phenomenon associated
+with a synchronized hyperactivity and reorganization
+of the two auditory pathways (lemniscal and extralem-
+niscal) all the way up to the auditory cortex (Moller,
+2007).
+The correlation between tinnitus strength and the
+amount of reorganization of the primary cortex found
+in earlier study (Mühlnickel et al., 1998) was not repli-
+cated or weakened in subsequent studies (Weisz et al.,
+2005a; Yang et al., 2011).
+In a previous study tailor-made notched music (i.e.
+music with a frequency band of one octave width cen-
+tered at the individual tinnitus frequency removed from
+the music energy spectrum via digital notch filter)
+was used to counteract tinnitus-related auditory cortex
+reorganization. The presumed mechanism here is inhi-
+bition of tinnitus-related activity mediated by lateral
+inhibition (Okamoto et al., 2010). For the “placebo”
+group a moving notch filter of one octave around the
+tinnitus frequency was applied. A third group didn’t
+receive any music treatment at all and served as a
+control group.
+In this study patients with very mild to mild tinnitus
+distress were enrolled (TQ 18.4 ± 10.8; scale 0–84).
+Both, the active group (n = 8) listening to tailor-made
+notched music and the control group (n = 7) without
+any music treatment showed after 6 months improve-
+ments in loudness (measured by a VAS scale, 0–100).
+On the other hand, the “placebo” group (n = 8) using
+a moving notch filter showed worsening of the per-
+ception of tinnitus loudness which might be explained
+by a tinnitus worsening effect of the moving notch fil-
+ter technique itself. This observed deterioration of the
+P.A. Tass et al. / Counteracting tinnitus by acousticplacebo group contrasts with the improvements of the
+placebo group described here in RESET and contra-
+dicts also latest pharmacological studies in the field
+of tinnitus like the Neramexane trial (Suckfüll et al.,
+2011) where also a pronounced placebo effect was
+notable.
+In contrast, the CR approach strictly avoids inhi-
+bition of pathologically synchronized activity (Tass
+and Majtanik, 2006; Hauptmann and Tass, 2007; Tass
+and Hauptmann, 2009). As shown computationally, in
+general, inhibitory stimulation is unfavorable for anti-
+kindling, since inactive neurons are unable to unlearn
+(Tass and Majtanik, 2006; Hauptmann and Tass, 2007;
+Tass and Hauptmann, 2009). However, CR robustly
+works even if only inhibitory synapses are stimulated
+(Hauptmann and Tass, 2007; Tass and Hauptmann,
+2009), because a phase reset can be achieved by
+both excitatory and inhibitory stimuli (Winfree, 1977;
+Guttman et al., 1980).
+Optimal desynchronizing CR effects require mutu-
+ally sufficiently distant stimulation sites (here
+frequencies) (Tass, 2003; Lysyansky et al., 2011).
+As yet, there is no neuroimaging or electrophysio-
+logical technique available which enables to assess
+the spatial extent of the synchronized focus in tinni-
+tus patients. Psychoacoustic measurements of tinnitus
+spectra revealed that broad frequency ranges, largely
+corresponding to ranges with abnormally elevated
+hearing thresholds, contribute to the patients’ tinnitus
+sensations (Norena et al., 2002). The corresponding
+central auditory neurons, deprived of afferent input,
+were supposed to be engaged in the pathological,
+tinnitus-related neuronal activity (Norena et al., 2002).
+Accordingly, based on results from theoretical studies
+(Tass, 2003; Tass and Hauptmann, 2009; Lysyansky
+et al., 2011) we derived rules for choosing pitch and
+amplitude of the desynchronizing CR tones: Ideally
+the CR stimuli should be confined to the synchronized
+focus. However, CR is still (but less) effective if one
+or two stimulation sites are misplaced, e.g. because
+they are located outside the synchronized focus. Most
+importantly, a dense spacing of the stimulation sites
+places the desynchronizing effect in jeopardy. In fact,
+for sufficiently dense spacing of the stimulation sites
+the effect of CR stimulation finally approaches the
+synchronizing effect of a spatially homogenous stimu-
+lation that is periodic in time (Tass and Hauptmann,
+2009). Accordingly, given the spatial profile of the
+tuning curves, especially in patients with impaired
+hearing, a spatially selective stimulation requires the
+coordinated reset neuromodulation
+ 153
+CR tones to be sufficiently spaced, equally loud and
+just super-threshold (see Methods). Accordingly, the
+masking effect in G2 suggests that due to a relevant
+portion of stimulation cycles with neighboring tones
+the noisy CR in G2 suppresses the tinnitus-related
+neuronal activity via lateral inhibition. The significant
+difference of the long-lasting, cumulative and long-
+term effects in G1/G3 vs. the masking effects in G2
+indicate that the therapeutic outcome might be opti-
+mized by further adapting the arrangement of the CR
+frequencies to the individual tonotopy and the dimen-
+sions of the pathological synchronized activity in the
+primary auditory cortex. Also, a closer meshed adapta-
+tion of the repetition rate F to the intrinsically varying ␦
+peak frequency might possibly improve the therapeutic
+outcome.
+4.5. Neuronal synchronization
+Tinnitus animal research mainly focuses on neu-
+ral correlates of short-term tinnitus. In several studies
+it was shown that noise trauma causes an immediate
+increase of neuronal cross-correlation, which may even
+precede the increase of the firing rates (Ochi and Egger-
+mont, 1997; Norena and Eggermont, 2003; Seki and
+Eggermont, 2003). For several reasons comparison to
+results obtained in humans with MEG, EEG or LFP
+measurements has to be drawn carefully:
+(i) Human EEG, MEG and LFP studies have typ-
+ically been performed in patients with chronic
+tinnitus (see Weisz et al., 2005a; Weisz et al.,
+2007). In analogy to animal studies, in one
+human study a rapid increase of neuronal syn-
+chronization, in terms of a rapid increase of ␥
+power in the auditory cortex, following noise
+trauma was observed (Ortmann et al., 2011).
+(ii) In tinnitus animal experiments and in human
+studies neuronal dynamics is studied on dif-
+ferent scales. While in tinnitus animal studies
+typically neuronal spikes or bursts are ana-
+lyzed (Eggermont, 1992; Ochi and Eggermont,
+1997), in human studies LFP, scalp EEG and
+MEG oscillations are investigated, which are
+considered to be generated by oscillations of
+neocortical postsynaptic potentials (Klaas and
+Daly, 1979; Nunez, 1981; Hämäläinen et al.,
+1993; Niedermeyer and Lopes da Silva, 1999).
+(iii) In this paper the term “neuronal synchroniza-
+tion” stands for coincident firing in a large
+154
+ P.A. Tass et al. / Counteracting tinnitus by acousticpopulation of neurons. This type of synchro-
+nization leads to large-amplitude oscillations as
+detected by LFP, EEG, and MEG signals, typi-
+cally in particular frequency ranges (see Klaas
+and Daly, 1979; Nunez, 1981; Hämäläinen
+et al., 1993; Niedermeyer and Lopes da Silva,
+1999). In contrast, cross correlation analysis is
+typically performed for single unit and/or multi
+unit data (Eggermont, 1992; Ochi and Egger-
+mont, 1997). Qualitatively different types of
+collective synchronization patterns may lead
+to large-amplitude LFP, EEG and MEG oscil-
+lations, see e.g. (Popovych and Tass, 2011).
+However, fundamental dynamical phenomena,
+such as collective coincident firing, can be
+detected with different synchronization and
+cross correlation measures, for review see
+(Quiroga et al., 2002).
+4.6. Mechanisms of CR neuromodulation at the
+cortical level
+The auditory pathway has a complex, hierarchi-
+cal tonotopic organization (Ehret and Romand, 1997).
+Based on the results presented here, we can hypothe-
+size about how acoustic CR neuromodulation actually
+works at the cortical level. Based on previous, in
+particular computational studies, CR might cause a
+desynchronization of cortical neuronal populations in
+qualitatively different ways:
+(i) Stimuli can effectively induce a phase reset no
+matter whether they act on neurons directly
+(as e.g., electrical pulses delivered to the neu-
+ronal membrane) or indirectly (i.e. transmitted
+via synapses) (Popovych and Tass, 2012; Tass
+and Popovych, 2012). Due to the tonotopic
+organization of the central auditory system,
+these phase resets may, hence, occur at dif-
+ferent sites. The spatial spread of the different
+stimuli crucially depends on the characteristics
+of the tuning curves of auditory nerve fibers,
+which may, e.g., be pathologically broadened
+in patients with cochlear hearing loss (Wight-
+man et al., 1977; Ryan et al., 1979; Liberman
+and Dodds 1984; Pickles, 1984). However,
+it has computationally been shown that CR
+neuromodulation is quite robust with respect
+to variations of the spatial spread (Lysyansky
+et al., 2011). So, in principle, acoustic CR
+coordinated reset neuromodulation
+neuromodulation might induce a desynchro-
+nization of the ␦ rhythm at the cortical level
+by inducing phase resets of the ␦ rhythm in dif-
+ferent cortical subpopulations at different times.
+For a discussion of phase resets of ongoing brain
+rhythms we refer to (Klimesch et al., 2006).
+(ii) However, desynchronization at the cortical level
+might also be induced by CR in a qualita-
+tively different way. The typical CR mechanism,
+desynchronization via time-shifted phase resets
+of neuronal subpopulations (Tass, 2003), might
+take place at an upstream nucleus in the central
+auditory system. From computational stud-
+ies it is known, that desynchronizing effects
+propagate between neuronal populations: This
+has been shown for qualitatively different
+(single-site vs. multi-site) stimulation tech-
+niques and, in particular, for different topologies
+of the connectivity (Hauptmann et al., 2005;
+Popovych et al., 2006; Popovych and Tass,
+2010). Remarkably, desynchronizing effects do
+not only propagate between neuronal popula-
+tions in case of a connectivity pattern with a
+Gaussian connection probability (Hauptmann
+et al., 2005), but even with a mean field coupling,
+i.e. a connectivity pattern where each neuron of
+one of the populations is coupled to all neurons
+of the other population with equal strength –
+in a uni-directional or even bi-directional set-
+up (Popovych et al., 2006; Popovych and Tass,
+2010). These results indicate that the propa-
+gation of desynchronizing effects might be a
+robust mechanism which does not depend on
+the type of the stimulation technique causing the
+desynchronization in an upstream population.
+Mechanism (ii) might be particularly relevant
+for the propagation of desynchronizing effects
+from auditory to non-auditory areas, since it
+does not require a tonotopic organization of the
+connections.
+In other words, the desynchronization at the level of
+the primary auditory cortex might be induced by the
+genuine CR mechanism, time-shifted phase resets of
+neuronal subpopulations (Tass, 2003), or by a prop-
+agation of desynchronizing effects from an upstream
+nucleus of the central auditory system. In the latter case
+the genuine CR mechanism takes place in the upstream
+nucleus. From a theoretical standpoint, combinations
+of mechanisms (i) and (ii) might also be conceivable.
+P.A. Tass et al. / Counteracting tinnitus by acousticTo study the dynamical mechanism of acoustic CR
+neuromodulation in tinnitus patients in more detail, in
+a forthcoming EEG study we shall analyze in which
+auditory and non-auditory brain areas single tones
+cause a phase reset of pathological rhythms (e.g. ␦)
+and CR stimuli (i.e. time-shifted sequences of phase
+resetting tones) cause a desynchronization.
+4.7. Pathophysiology of tinnitus
+One limitation of the pioneering MEG study by
+Weisz and coworkers (2005a), revealing pathologi-
+cally enhanced ␦ and decreased ␣ in tinnitus patients,
+was that contrary to the normal hearing control group
+the tinnitus group had a high-frequency hearing loss.
+Since the brain regions with increased ␦ power were
+also the regions of decreased ␣ power, the results by
+Weisz et al. (2005a) are similar to findings obtained
+during slow-wave sleep (Benoit et al., 2000). Accord-
+ingly, Weisz et al. (2005a) could not rule out that the
+changes in spontaneous brain activity might simply
+be due to sensory deprivation, in terms of the high-
+frequency hearing loss, rather than being specific for
+tinnitus. In contrast, our EEG results were obtained in
+one group of patients with tinnitus and after signifi-
+cant CR induced tinnitus relief and having the same
+hearing levels before and after therapy. Accordingly,
+our study does not feature the limitation of a non-
+matched hearing loss between comparison groups and,
+hence, substantially confirms the findings by Weisz et
+al. (2005a), in accordance, e.g., with the neurofeed-
+back (Dohrmann et al., 2007a) and residual inhibition
+(Kahlbrock and Weisz, 2008) studies. Hyperacusis and
+depression were not assessed in our RESET study.
+4.8. Limitation of the RESET trial
+The RESET trial is an exploratory first in man trial
+and not a fully powered trial. It serves the purpose
+to collect safety information as well as efficacy data
+for different doses of acoustic CR. Therefore several
+shortcomings of the trial have to be taken into account:
+no confirmatory statistical approach was used but sev-
+eral efficacy endpoints common in tinnitus research
+were investigated with statistics of exploratory nature.
+EEG recordings were used as biomarkers to explore
+the effects of acoustic CR on different brain regions.
+Randomization was done using computer random
+codes. By chance and “small group effect” the allo-
+cation of patients to the placebo group (G5) showed
+coordinated reset neuromodulation
+ 155
+significant differences in baseline scores concerning
+several important parameters. The small group size and
+the baseline difference of the placebo group is clearly a
+weak point of the trial. The main purpose of our placebo
+group was to have stimulation tones, that where suf-
+ficiently remote from the tinnitus frequency. This was
+motivated by few case studies of acoustic CR treat-
+ment performed prior to the start of the RESET trial.
+In these cases we observed that shifting all CR tones
+by around 50% to either side of the tinnitus frequency
+and applied for several hours per day may have adverse
+effects (e.g. transient headache, transient increase of
+tinnitus loudness and annoyance). For this reason, to
+avoid side effects but nevertheless perform acoustic
+stimulation resembling therapeutic stimulation, in the
+placebo group we delivered CR tones far away from
+the range of tinnitus frequency for one hour per day
+only. Dosage based un-blinding of the placebo group
+was prevented by an active stimulation group (G4) with
+similar dosage (one hour per day).
+Another important aspect in the context of un-
+blinding is the on-stimulation effect. Remarkably,
+in accordance with our theoretical predictions (Tass
+and Hauptmann, 2009) the stimulation in G2 has
+on-stimulation effects, but no off-stimulation effects
+(“pseudo placebo”).
+However, additional analyses provide further evi-
+dence for the effectiveness of the CR treatment.
+Concerning the different baseline characteristics of the
+placebo group, on the one hand we showed that treat-
+ment success did not correlate with tinnitus duration,
+tinnitus severity or age. On the other hand, subgroups
+of G1 matched to the placebo group with respect to
+size and tinnitus severity were compared to the placebo
+group. We found a substantially greater improvement
+in G1 subgroups as compared to G5. Furthermore, to
+perform a statistical comparison between two groups
+with comparable sizes, we pooled two big groups:
+The “effective stimulation group” G1 + G3 (n = 34,
+4–6 h/day CR neuromodulation) was compared with
+the “ineffective stimulation group” comprising all data
+of G2 (“noisy” stimulation with a masking effect but
+without lasting off-effect), G4 (only 1 h of CR neu-
+romodulation per day leading to small improvements
+only) and G5 (the placebo group) with n = 29 patients.
+Although the “ineffective stimulation group” showed
+significant results compared to baseline concerning
+VAS loudness and annoyance in the ON condition
+as well as TQ, the “effective stimulation group” was
+significantly better than the “ineffective stimulation
+156
+ P.A. Tass et al. / Counteracting tinnitus by acousticgroup” with respect to VAS loudness on/off after 12
+and 16 weeks, VAS annoyance on/off after 12 weeks,
+and TQ after 12 weeks. These results are accompa-
+nied by a pronounced shift in tinnitus frequency in the
+pooled CR neuromodulation group (G1 + G3). Finally,
+we performed a comparison between all groups and
+the active control group G2, the masker-like noisy CR
+group, which showed a good on-effect without last-
+ing off-effect. G1 and G3, both groups with 4–6 h/day
+of CR neuromodulation turned out to reveal signifi-
+cantly better results than the “masker like” group G2.
+Still the exploratory data from the RESET trial serve
+now for the start of a fully powered prospective mul-
+ticenter double blind placebo controlled randomized
+trial (“RESET 2”) that will randomize 100 patients
+with chronic tonal tinnitus either to pseudo placebo
+or acoustic CR.
+Patients profited differently from the CR neuro-
+modulation. In future studies, we aim to elucidate the
+influence of clinical or/and EEG variables prior to ther-
+apy on the therapy success.
+Overall, our study strongly supports the pivotal
+role of pathological synchrony in tinnitus generation
+(Llinás et al., 1999; Weisz et al., 2005a; Dohrmann
+et al., 2007a; Kahlbrock and Weisz, 2008; van der
+Loo et al., 2009; Moazami-Goudarzi et al., 2010), as
+suggested, e.g., in the context of thalamocortical dys-
+rhythmia (Llinás et al., 1999). Along with the results
+of the experimental studies of our group this approach
+may therefore open novel therapeutic and neuroscien-
+tific avenues.
+Acknowledgments
+We are grateful to Drs. N. Pasch, H. Hermes, D.
+Jürgens, J. Alberty, G. Krückels, W. Schütz, and S.
+Schütz for contributions to patient selection. We grate-
+fully acknowledge discussions with Dr. Oleksandr
+Popovych and Dr. Timea Tóth. The RESET study was
+funded by Research Center Jülich and ANM Adaptive
+Neuromodulation GmbH.
+Conflict of interest
+Dr. Peter Tass and Dr. Christian Hauptmann have a
+contractual relationship with ANM Adaptive Neuro-
+modulation GmbH, the sponsor of the clinical trial.
+Dr. Peter Tass and Dr. Hans-Joachim Freund are
+coordinated reset neuromodulation
+holding shares of ANM Adaptive Neuromodulation
+GmbH.
+References
+Benabid, A.L., Pollak, P., Gervason, C., Hoffmann, D., Gao,
+D.M., Hommel, M., Perret, J.E. & de Rougemount, J. (1991).
+Longterm suppression of tremor by chronic stimulation of ven-
+tral intermediate thalamic nucleus. The Lancet, 337, 403-406.
+Benoit, O., Daurat, A. & Prado, J. (2000). Slow (0.7–2 Hz) and fast
+(2–4 Hz) delta components are differently correlated to theta,
+alpha and beta frequency bands during NREM sleep. Clin Neu-
+rophysiol, 111, 2103-2106.
+Caffier, P., Haupt, H., Scherer, H. & Mazurek, B. (2006). Outcomes
+of long-term outpatient tinnitus-coping therapy: psychometric
+changes and value of tinnitus-control instruments. Ear Hear,
+27, 619-627.
+Chen, R., Classen, J., Gerloff, C., Celnik, P., Wassermann, E.M.,
+Hallett, M. & Cohen, L.G. (1997). Depression of motor cortex
+excitability by low-frequency transcranial magnetic stimula-
+tion. Neurology, 48, 1398-1403.
+De Ridder, D., Verstraeten, E., Van der Kelen, K., De Mulder, G.,
+Sunaert, S., Verlooy, J., Van de Heyning, P. & Moller, A.R.
+(2005). Transcranial magnetic stimulation for tinnitus: Influ-
+ence of tinnitus duration on stimulation parameter choice and
+maximal tinnitus suppression. Otol Neurootol, 26, 616-619.
+De Ridder, D., De Mulder, G., Verstraeten, E., Van der Kelen, K.,
+Sunaert, S., Smits, M., Kovacs, S., Verlooy, J., Van de Heyning,
+P. & Moller, A.R. (2006). Primary and secondary auditory cor-
+tex stimulation for intractable tinnitus. ORL J Otorhinolaryngol
+Relat Spec, 68, 48-55.
+De Ridder, D., De Mulder, G., Menovsky, T., Sunaert, S. & Kovacs,
+S. (2007). Electrical stimulation of auditory and somatosensory
+cortices for treatment of tinnitus and pain. Prog Brain Res,
+166(36), 377-388.
+De Ridder, D., Van der Loo, E., Vanneste, S., Gais, S., Plazier,
+M., Kovacs, S., Menovsky, T. & Van de Heyning, P. (2011).
+Theta-gamma dysrhythmia and auditory phantom perception.
+J Neurosurg, 114(4), 912-921.
+De Ridder, D. & Vanneste, S. (2011). Auditory Cortex Stimulation
+for Tinnitus. In: Moller, A.R., Langguth, B., De Ridder, D. &
+Kleinjung, T. (Eds.), Textbook of Tinnitus, Springer, New York,
+717-726.
+Dietrich, V., Nieschalk, M., Stoll, W., Rajan, R. & Pantev, C. (2001).
+Cortical reorganization in patients with high frequency cochlear
+hearing loss. Hear Res, 158, 95-101.
+Dohrmann, K., Elbert, T., Schlee, W. & Weisz, N. (2007a). Tun-
+ing the tinnitus percept by modification of synchronous brain
+activity. Restor Neurol Neurosci, 25, 371-378.
+Dohrmann, K., Weisz, N., Schlee, W., Hartmann, T. & Elbert, T.
+(2007b). Neurofeedback for treating tinnitus. Prog Brain Res,
+166, 473-485.
+Eggermont, J.J. (1992). Neural interaction in cat primary auditory
+cortex. Dependence on recording depth, electrode separation,
+and age. J Neurophysiol, 68, 1216-1228.
+P.A. Tass et al. / Counteracting tinnitus by acousticEggermont, J.J. (2003). Central tinnitus. Auris Nasus Larynx, 30,
+7-12.
+Eggermont, J.J. & Robert, L.E. (2004). The neuroscience of tinnitus.
+Trends Neurosci, 27, 676-682.
+Ehret, G. & Romand, R. (1997). (Eds.), The central auditory system,
+Oxford University Press, Oxford.
+Elbert, T., Rockstroh, B., Kowalik, Z.J. & Hoke, M. (1997). Clinical
+applications of EEG analyses using tools derived from non-
+linear system theory. In: Angelieri, F., Butler, S.R., Giaquinto,
+S. & Majkowski, J. (Eds.), Analysis of the electrical activity of
+the brain, Wiley and Sons, London.
+Engineer, N.D., Riley, J.R., Seale, J.D., Vrana, W.A., Shetake, J.A.,
+Sudanagunta, S.P., Borland, M.S. & Kilgard, M.P. (2011).
+Reversing pathological neural activity using targeted plasticity.
+Nature, 470, 101-104.
+Feldmann, H. (1971). Homolateral and contralateral masking of
+tinnitus by noise-bands and pure tones. Audiol (Basel), 10,
+138-144.
+Frank, G., Kleinjung, T., Landgrebe, M., Vielsmeier, V., Steffen-
+hagen, C., Burger, J., Frank, E., Vollberg, G., Hajak, G. &
+Langguth, B. (2010). Left temporal low-frequency rTMS for the
+treatment of tinnitus: Clinical predictors of treatment outcome
+– a retrospective study. Eur J Neurol, 17, 951-956.
+Franosch, J.M., Kempter, R., Fastl, H. & Van Hemmen, J.L. (2003).
+Zwicker tone illusion and noise reduction in the auditory sys-
+tem. Phys Rev Lett, 90, 178103.
+Gerstner, W., Kempter, R., Van Hemmen, L. & Wagner, H. (1996).
+A neuronal learning rule for sub-millisecond temporal coding.
+Nature, 383, 76-81.
+Goebel, G. & Hiller, W. (1994). The tinnitus questionnaire. A stan-
+dard instrument for grading the degree of tinnitus. Results of
+a multicenter study with the tinnitus questionnaire. HNO, 42,
+166-172.
+Goebel, G. & Hiller, W. (1998). Tinnitus-Fragebogen (TF). Ein
+Instrument zur Erfassung von Belastung und Schweregrad bei
+Tinnitus. Handanweisung, Göttingen, Hogrefe.
+Goebel, G., Kahl, M., Arnold, W. & Fichter, M. (2006). 15-year
+prospective follow-up study of behavioral therapy in a large
+sample of in patients with chronic tinnitus. Acta Otolaryngol
+Suppl, 556, 70-79.
+Guttman, R., Lewis, S. & Rinzel, J. (1980). Control of repetitive fir-
+ing in squid axon membrane as a model for a neuroneoscillator.
+J Physiol, 305, 377-395.
+Hämäläinen, M., Hari, R., Ilmoniemi, R.J., Knuutila, J. &
+Lounasmaa, O.V. (1993). Magnetoencephalography—theory,
+instrumentation, and applications to noninvasive studies of the
+working human brain. Rev Mod Phys, 65, 413-497.
+Hartmann, T., Lorenz, I. & Weisz, N. (2011). Neurobiofeedback.
+In: Moller, A.R., Langguth, B., De Ridder, D. & Kleinjung, T.
+(Eds.), Textbook of Tinnitus, Springer, New York, 691-696.
+Hauptmann, C., Popovych, O. & Tass, P.A. (2005). Effectively
+desynchronizing deep brain stimulation based on a coordinated
+delayed feedback stimulation via several sites: A computational
+study. Biol Cybern, 93, 463-470.
+Hauptmann, C. & Tass, P.A. (2007). Therapeutic rewiring by means
+of desynchronizing brain stimulation. Biosystems, 89, 173-181.
+coordinated reset neuromodulation
+ 157
+Hauptmann, C. & Tass, P.A. (2009). Cumulative and after-effects
+of short and weak coordinated reset stimulation: A modeling
+study. J Neural Eng, 6, 016004.
+Hauptmann, C. & Tass, P.A. (2010). Restoration of segregated,
+physiological neuronal connectivity by desynchronizing stim-
+ulation. J Neural Eng, 7, 056008.
+Hazell, J.W.P. & Wood, S. (1981). Tinnitus masking – a significant
+contribution to tinnitus management. Brit J Audiol, 15, 223-230.
+Hesser, H., Weise, C., Rief, W. & Andersson, G. (2011). The effect
+of waiting: A meta-analysis of wait-list control groups in trials
+for tinnitus distress. J Psychosom Res, 70(4), 378-384.
+Irvine, D.R., Rajan, R. & Brown, M. (2001). Injury- and use-related
+plasticity in adult auditory cortex. Audiol Neurootol, 6, 192-195.
+Jacobson, N.S. & Truax, P. (1991). Clinical significance: A statisti-
+cal approach to defining meaningful change in psychotherapy
+research. J Consult Clin Psychol, 59, 12-19.
+Jastreboff, P.J. & Hazell, J.W. (1993). A neurophysiological
+approach to tinnitus: Clinical implications. Br J Audiol, 27(1),
+7-17.
+Jeanmonod, D., Magnin, M. & Morel, A. (1996). Low-threshold
+calcium spike bursts in the human thalamus. Common phys-
+iopathology for sensory, motor and limbic positive symptoms.
+Brain, 119, 363-375.
+Kahlbrock, N. & Weisz, N. (2008). Transient reduction of tinnitus
+intensity is marked by concomitant reductions of delta band
+power. BMC Biol, 16(6), 4.
+Klass, D.W. & Daly, D.D. (1979). (Eds.), Current practice of clinical
+electroencephalography, Raven Press, New York.
+Kleinjung, T., Langguth, B. & Khedr, E. (2011). Transcranial mag-
+netic stimulation. In: Moller, A.R., Langguth, B., De Ridder,
+D. & Kleinjung, T. (Eds.), Textbook of Tinnitus, Springer, New
+York, 697-710.
+Klimesch, W., Hanslmayr, S., Sauseng, P. & Gruber, W.R. (2006).
+Distinguishing the evoked response from a phase reset: A com-
+ment to Mäkinen et al. Neuroimage, 26, 808-811.
+Kovacs, S., Peeters, R., Smits, M., De Ridder, D., Van Hecke, P.
+& Sunaert, S. (2006). Activation of cortical and subcortical
+auditory structures at 3 T by means of a functional magnetic
+resonance imaging paradigm suitable for clinical use. Invest
+Radiol, 41, 87-96.
+Kühn, A.A., Kempf, F., Brücke, C., Doyle, L.G., Martinez-Torres,
+I., Pogosyan, A., Trottenberg, T., Kupsch, A., Schneider, G.H.,
+Hariz, M.I., Vandenberghe, W., Nuttin, B. & Brown, P. (2008).
+High-frequency stimulation of the subthalamic nucleus sup-
+presses oscillatory beta activity in patients with Parkinson’s
+disease in parallel with improvement in motor performance. J
+Neurosci, 28, 6165-6173.
+Langguth, B., Eichhammer, P., Wiegand, R., Marienhagen, J., Maen-
+ner, P., Jacob, P. & Hajak, G. (2003). Neuronavigated rTMS in
+a patient with chronic tinnitus. Effects of 4 weeks treatment.
+Neuroreport, 14, 977-980.
+Liberman, M.C. & Dodds, L.W. (1984). Single-neuron labeling and
+chronic cochlear pathology. III Stereocilia damage and alter-
+ations of threshold tuning curves. Hear Res, 16, 55-74.
+Llinás, R.R., Ribary, U., Jeanmonod, D., Kronberg, E.
+& Mitra, P.P. (1999). Thalamocortical dysrhythmia:
+158
+ P.A. Tass et al. / Counteracting tinnitus by acoustic coordinated reset neuromodulation
+A neurological and neuropsychiatric syndrome characterized
+by magnetoencephalography. Proc Natl Acad Sci U S A, 96,
+15222-15227.
+Lockwood, A.H., Salvi, R.J., Coad, M.L., Towsley, M.L., Wack,
+D.S. & Murphy, B.W. (1998). The functional neuroanatomy of
+tinnitus: Evidence for limbic system links and neural plasticity.
+Neurology, 50, 114-120.
+Lockwood, A.H., Salvi, R.J., Burkard, R.F., Galantowicz, P.J., Coad,
+M.L. & Wack, D.S. (1999). Neuroanatomy of tinnitus. Scand
+Audiol Suppl, 51, 47-52.
+Lockwood, A.H., Salvi, R.J. & Burkard, R.F. (2002). Tinnitus. N
+Engl J Med, 347, 904-910.
+Lysyansky, B., Popovych, O.V. & Tass, P.A. (2011). Desynchroniz-
+ing anti-resonance effect of the m:n ON-OFF coordinated reset
+stimulation. J Neural Eng, 8, 036019.
+Markram, H., Lübke, J., Frotscher, M. & Sakmann, B. (1997). Reg-
+ulation of synaptic efficacy by coincidence of postsynaptic APs
+and EPSPs. Science, 275, 213-215.
+Martinez-Devesa, P., Perera, R., Theodoulou, M. & Waddell, A.
+(2010). Cognitive behavioural therapy for tinnitus. Cochrane
+Database Syst Rev, 8(9), 1-33.
+Melcher, J.R., Sigalovsky, I.S., Guinan, J.J. Jr. & Levine, R.A.
+(2000). Lateralized tinnitus studied with functional magnetic
+resonance imaging: Abnormal inferior colliculus activation. J
+Neurophysiol, 83, 1058-1072.
+Moazami-Goudarzi, M., Michels, L., Weisz, N. & Jeanmonod, D.
+(2010). Temporo-insular enhancement of EEG low and high
+frequencies in patients with chronic tinnitus. QEEG study of
+chronic tinnitus patients. BMC Neurosci, 11, 40.
+Moller, A.R. (2003). Pathophysiology of tinnitus. Otolaryngol Clin
+North Am, 36, 249-266.
+Moller, A.R. (2007). The role of neural plasticity in tinnitus. Prog
+Brain Res, 166, 37-45.
+Moller, A.R., Langguth, B., De Ridder, D. & Kleinjung, T. (2011),
+(Eds.), Textbook of tinnitus, Springer, New York.
+Mühlnickel, W., Elbert, T., Taub, E. & Flor, H. (1998). Reorganiza-
+tion of auditory cortex in tinnitus. Proc Natl Acad Sci U S A,
+95, 10340-10343.
+Neiman, A.B., Russell, D.F., Yakusheva, T.A., DiLullo, A. &
+Tass, P.A. (2007). Response clustering in transient stochas-
+tic synchronization and desynchronization of coupled neuronal
+bursters. Phys Rev E Stat Nonlin Soft Matter Phys, E76, 021908.
+Nichols, T.E. & Holmes, A.P. (2002). Nonparametric permutation
+tests for functional neuroimaging: A primer with examples.
+Hum Brain Mapp, 15, 1-25.
+Niedermeyer, E. & Lopes da Silva, F.H. (1999), (Eds.), Elec-
+troencephalography. Basic principals, clinical applications, and
+related fields. 4th ed., Williams & Wilkins, London.
+Norena, A., Micheyl, C., Chery-Croze, S. & Collet, L. (2002).
+Psychoacoustic characterization of the tinnitus spectrum:
+Implications for the underlying mechanisms of tinnitus. Audiol
+Neurootol, 7, 358-369.
+Norena, A.J. & Eggermont, J.J. (2003). Changes in spontaneous neu-
+ral activity immediately after an acoustic trauma: Implications
+for neural correlates of tinnitus. Hear Res, 183, 137-153.
+Nunez, P.L. (1981). Electric fields of the brain: The neurophysics of
+EEG, Oxford University Press, New York.
+Ochi, K. & Eggermont, J.J. (1997). Effects of quinine on neu-
+ral activity in cat primary auditory cortex. Hear Res, 105,
+105-118.
+Okamoto, H., Stracke, H., Stoll, W. & Pantev, C. (2010). Listening
+to tailor-made music reverses maladaptive auditory cortex reor-
+ganization and alleviates tinnitus. Proc Natl Acad Sci U S A,
+107(3), 1207-1210.
+Ortmann, M., Müller, N., Schlee, W. & Weisz, N. (2011). Rapid
+increases of gamma power in the auditory cortex following
+noise trauma in humans. Eur J Neurosci, 33, 568-575.
+Pascual-Leone, A., Valls-Solé, J., Wassermann, E.M. & Hallett, M.
+(1994). Responses to rapid-rate transcranial magnetic stimula-
+tion of the human cortex. Brain, 117(4), 847-858.
+Pascual-Marqui, R.D. (2002). Standardized low resolution brain
+electromagnetic tomography (sLORETA): Technical details.
+Methods Find Exp Clin Pharmacol, 24, 5-12.
+Pickles, J.O. (1984). Frequency threshold curves and simultaneous
+masking functions in high-threshold, broadly-tuned, fibres of
+the guinea pig auditory nerve. Hear Res, 16, 91-99.
+Plewnia, C., Bartels, M. & Gerloff, C. (2003). Transient suppression
+of tinnitus by transcranial magnetic stimulation. Ann Neurol,
+53, 263-266.
+Popovych, O.V., Hauptmann, C. & Tass, P.A. (2006). Desynchro-
+nization and decoupling of interacting oscillators by nonlinear
+delayed feedback. Int J Bif Chaos, 16, 1977-1987.
+Popovych, O.V. & Tass, P.A. (2010). Synchronization control of
+interacting oscillatory ensembles by mixed nonlinear delayed
+feedback. Phys Rev E, 82, 026204.
+Popovych, O.P. & Tass, P.A. (2011). Macroscopic entrainment of
+periodically forced oscillatory ensembles. Prog Biophys Mol
+Biol, 105, 98-108.
+Popovych, O.V. & Tass, P.A. (2012). Desynchronizing electrical
+and sensory coordinated reset neuromodulation. Front Hum
+Neurosci, 6, 58. doi:10.3389/fnhum.2012.00058
+Quiroga, R.Q., Kraskov, A., Kreuz, T. & Grassberger, P. (2002).
+Performance of different synchronization measures in real data:
+A case study on electroencephalographic signals. Phys Rev E,
+65, 041903.
+Rajan, R. & Irvine, D.R. (1998). Neuronal responses across corti-
+cal field A1 in plasticity induced by peripheral auditory organ
+damage. Audiol Neurootol, 3, 123-144.
+Rauschecker, J.P. (1999). Auditory cortical plasticity: A comparison
+with other sensory systems. Trends Neurosci, 22, 74-80.
+Rauschecker, J.P., Leaver, A.M. & Mühlau, M. (2010). Tuning out
+the noise: Limbic-auditory interactions in tinnitus. Neuron, 66,
+819-826.
+Roberts, L.E., Eggermont, J.J., Caspary, D.M., Shore, S.E.,
+Melcher, J.R. & Kaltenbach, J.A. (2010). Ringing Ears:
+The Neuroscience of Tinnitus. J Neurosci, 30(45), 14972-
+14979.
+Robertson, D. & Irvine, D.R. (1989). Plasticity of frequency organi-
+zation in auditory cortex of guinea pigs with partial unilateral
+deafness. J Comp Neurol, 282, 456-471.
+P.A. Tass et al. / Counteracting tinnitus by acousticRyan, A., Dallos, P. & McGee, T. (1979). Psychophysical tuning
+curves and auditory thresholds after hair cell damage in the
+chinchilla. J Acoust Soc Am, 66, 1096-1098.
+Saunders, J.C. (2007). The role of central nervous system plasticity
+in tinnitus. J Commun Disord, 40, 313-334.
+Scherg, M., Ille, N., Bornfleth, H. & Berg, P. (2002). Advanced tools
+for digital EEG review: Virtual source montages, whole-head
+mapping, correlation, and phase analysis. J Clin Neurophysiol,
+19(2), 91-112.
+Schlee, W., Mueller, N., Hartmann, T., Keil, J., Lorenz, I. & Weisz,
+N. (2009a). Mapping cortical hubs in tinnitus. BMC Biol, 7, 80.
+Schlee, W., Hartmann, T., Langguth, B. & Weisz, N. (2009b). Abnor-
+mal resting-state cortical coupling in chronic tinnitus. BMC
+Neuroscience, 10, 11.
+Seki, S. & Eggermont, J.J. (2003). Changes in spontaneous firing
+rate and neural synchrony in cat primary auditory cortex after
+localized tone-induced hearing loss. Hear Res, 180(1-2), 28-38.
+Smits, M., Kovacs, S., De Ridder, D., Peeters, R.R., Van Hecke,
+P. & Sunaert, S. (2007). Lateralization of functional magnetic
+resonance imaging (fMRI) activation in the auditory pathway of
+patients with lateralized tinnitus. Neuroradiology, 49, 669-679.
+Steriade, M. (2006). Grouping of brain rhythms in corticothalamic
+systems. Neuroscience, 137, 1087-1106.
+Suckfüll, M., Althaus, M., Ellers-Lenz, B., Gebauer, A.,
+Görtelmeyer, R., Jastreboff, P.J., Moebius, H.J., Rosenberg,
+T., Russ, H., Wirth, Y. & Krueger, H. (2011). A randomized,
+double-blind, placebo-controlled clinical trial to evaluate the
+efficacy and safety of neramexane in patients with moderate
+to severe subjective tinnitus. BMC Ear Nose Throat Disord,
+11(11), 1.
+Surr, R.K., Montgomery, A.A. & Mueller, H.G. (1985). Effect of
+amplification on Tinnitus among new hearing aid users. Ear
+Hear, 6(2), 71-75.
+Tass, P.A. (2002). Desynchronization of brain rhythms with soft
+phase-resetting techniques. Biol Cybern, 87, 102-115.
+Tass, P.A. (2003). A model of desynchronizing deep brain stim-
+ulation with a demand-controlled coordinated reset of neural
+subpopulations. Biol Cybern, 89, 81-88.
+Tass, P.A. & Majtanik, M. (2006). Long-term anti-kindling effects
+of desynchronizing brain stimulation: A theoretical study. Biol
+Cybern, 94, 58-66.
+Tass, P.A. & Hauptmann, C. (2009). Anti-kindling achieved by stim-
+ulation targeting slow synaptic dynamics. Rest Neurol Neurosci,
+27, 589-609.
+Tass, P.A., Silchenko, A., Hauptmann, C., Barnikol, U.B. & Speck-
+mann, E.-J. (2009). Long-lasting desynchronization in rat
+hippocampal slice induced by coordinated reset stimulation.
+Phys Rev E Stat Nonlin Soft Matter Phys, 80, 011902.
+Tass, P.A. & Popovych, O.P. (2012). Unlearning tinnitus-related
+cerebral synchrony with acoustic coordinated reset stimulation
+– theoretical concept and modelling. Biol Cybern, 106, 27-36.
+doi:10.1007/s00422-012-0479-5
+Temperli, P., Ghika, J., Villemure, J.-G., Burkhard, P.R., Bogous-
+slavsky, J. & Vingerhoets, F.J.G. (2003). How do parkinsonian
+coordinated reset neuromodulation
+ 159
+signs return after discontinuation of subthalamic DBS? Neurol-
+ogy, 60, 78-81.
+Terry, A.M., Jones, D.M., Davis, B.R. & Slater, R. (1983). Parametric
+studies of tinnitus masking and residual inhibition. Br J Audiol,
+17, 245-256.
+Tyler, R.S. (2006). Tinnitus: Standard of care, personality differ-
+ences, genetic factors. ORL J Otorhinolaryngol Relat Spec,
+68(1), 14-19.
+Tyler, R.S. (2007). Clinical trials for tinnitus: Study populations,
+designs, measurement variables, and data analysis Prog Brain
+Res, 166, 499-509.
+Van der Loo, E., Gais, S., Congedo, M., Vanneste, S., Plazier, M.,
+Menovsky, T., Van de Heyning, P. & De Ridder, D. (2009).
+Tinnitus intensity dependent gamma oscillations in the con-
+tralateral auditory cortex. PLoS One, 4, e7396.
+Vanneste, S., Plazier, M., Van der Loo, E., De Heyning, P., Congedo,
+M. & De Ridder, D. (2010). The neural correlates of tinnitus-
+related distress. Neuroimage, 52(2), 470-480.
+Vanneste, S., Van de Heyning, P. & De Ridder, D. (2011). The neural
+network of phantom sound changes over time: A comparison
+between recent-onset and chronic tinnitus patients. Europ J
+Neuroscience, 34(5), 718-731.
+Wang, H., Wang, X. & Scheich, H. (1996). LTD and LTP induced
+by transcranial magnetic stimulation in auditory cortex. Neu-
+roreport, 7, 521-525.
+Weisz, N., Moratti, S., Meinzer, M., Dohrmann, K. & Elbert, T.
+(2005a). Tinnitus perception and distress is related to abnormal
+spontaneous brain activity as measured by magnetoencephalog-
+raphy. PLoS Med, 2(6), 546-553.
+Weisz, N., Wienbruch, C., Dohrmann, K. & Elbert, T. (2005b).
+Neuromagnetic indicators of auditory cortical reorganization
+of tinnitus. Brain, 128, 2722-2731.
+Weisz, N., Hartmann, T., Dohrmann, K., Schlee, W. & Norena, A.
+(2006). High-frequency tinnitus without hearing loss does not
+mean absence of deafferentation. Hear Res, 222, 108-114.
+Weisz, N., Müller, S., Schlee, W., Dohrmann, K., Hartmann, T. &
+Elbert, T. (2007). The neural code of auditory phantom percep-
+tion. J Neurosci, 27, 1479-1484.
+Wightman, F.L., McGee, T. & Kramer, M. (1977) Factors influ-
+encing frequency selectivity in normal and hearing-impaired
+listeners. In: Evans, E.F. & Wilson, J.P. (Eds.), Psychophysics
+and Physiology of Hearing, Academic Press, London.
+Winfree, A.T. (1977). Phase control of neural pacemakers. Science,
+197, 761-763.
+Yang, S., Weiner, B.D., Zhang, L.S., Cho, S.J. & Bao, S. (2011).
+Homeostatic plasticity drives tinnitus perception in an animal
+model. PNAS 108, 14974-14979.
+Yuste, R. & Bonhoeffer, T. (2004). Genesis of dendritic spines:
+Insights from ultrastructural and imaging studies. Nat Rev Neu-
+rosci, 5, 24-34.
+Zwicker, E. (1964). “Negative Afterimage” in hearing. J Acoust Soc
+Am, 36, 2413.
