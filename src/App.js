@@ -12,6 +12,9 @@ import {Button, ToggleButton, ToggleButtonGroup} from 'react-bootstrap';
 import Tone from 'tone';
 import StartAudioContext from 'startaudiocontext';
 
+import {renderAcrnSequence} from './acrnRenderer';
+import {audioBufferToWav, downloadBlob} from './wavEncoder';
+
 class App extends Component {
     constructor(props, context) {
         super(props, context);
@@ -39,6 +42,7 @@ class App extends Component {
             enableSlider: true,
             isPlaying: false,
             userStarted: false,
+            isExporting: false,
             playButtonText: buttonText,
             synth: new Tone.PolySynth(6, Tone.Synth, {
                 "oscillator": {
@@ -108,6 +112,38 @@ class App extends Component {
         }
         this.updatePlayState(!isPlaying, playState);
         this.setState({isPlaying: !isPlaying});
+    };
+
+    handleExportWav = () => {
+        let {isExporting, isPlaying, playState, freq} = this.state;
+        if (isExporting) {
+            return;
+        }
+
+        // Stop any live playback so it does not compete with the export.
+        if (isPlaying) {
+            Tone.Master.volume.rampTo(-Infinity, 0.05);
+            Tone.Transport.stop();
+            this.updatePlayState(false, playState);
+            this.setState({isPlaying: false});
+        }
+
+        this.setState({isExporting: true});
+
+        // Render in a separate (offline) audio context so it does not block
+        // for the full hour: OfflineAudioContext renders faster than realtime.
+        renderAcrnSequence(freq, constants.EXPORT_DURATION_SECONDS)
+            .then((audioBuffer) => {
+                let blob = audioBufferToWav(audioBuffer);
+                downloadBlob(blob, `acrn-${freq}hz-1hour.wav`);
+                this.setState({isExporting: false});
+            })
+            .catch((err) => {
+                // Surface the failure without leaving the button stuck.
+                console.error('WAV export failed:', err);
+                window.alert('Sorry, the WAV export failed. See the console for details.');
+                this.setState({isExporting: false});
+            });
     };
 
     playAcrn = () => {
@@ -271,7 +307,7 @@ class App extends Component {
 
 
     render = () => {
-        let {freq, enableSlider, volume, playButtonText, playState} = this.state;
+        let {freq, enableSlider, volume, playButtonText, playState, isExporting} = this.state;
         return (
             <div className="App">
                 <nav className="navbar navbar-default">
@@ -334,7 +370,7 @@ class App extends Component {
                         <div>
                             <input className='freq-value' onChange={this.handleTextFreqChange} value={freq}/>
                         </div>
-                        {playState == constants.PLAYER_STATES.PLAY_ACRN &&
+                        {playState === constants.PLAYER_STATES.PLAY_ACRN &&
                         <div>
                             <br/>
                             <i>frequencies used in sequence: {this.generateFreqs(freq).map((value, index) => ((index ? ', ' : '') + value))}</i>
@@ -344,6 +380,12 @@ class App extends Component {
                         <p>
                             <Button className='btn-success btn-lg'
                                     onClick={this.handleClickPlay}>{playButtonText}</Button>
+                            {' '}
+                            <Button className='btn-primary btn-lg'
+                                    onClick={this.handleExportWav}
+                                    disabled={isExporting}>
+                                {isExporting ? constants.EXPORT_WAV_BUSY_TEXT : constants.EXPORT_WAV_TEXT}
+                            </Button>
                         </p>
                         <div className='slider volume'>
                             Volume

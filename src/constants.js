@@ -6,6 +6,12 @@ export const STOP_TONE_TEXT = "Stop Tone";
 export const PLAY_SEQ_TEXT = "Play Pattern";
 export const STOP_SEQ_TEXT = "Stop Pattern";
 
+export const EXPORT_WAV_TEXT = "Export 1 Hour WAV";
+export const EXPORT_WAV_BUSY_TEXT = "Generating WAV...";
+
+// length of the exported track, in seconds (1 hour)
+export const EXPORT_DURATION_SECONDS = 3600;
+
 export const VOLUME_KEY = "volume";
 export const FREQ_KEY = "freq";
 export const PLAYER_STATE_KEY = "playerState";
