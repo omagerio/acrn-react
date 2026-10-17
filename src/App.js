@@ -12,8 +12,9 @@ import {Button, ToggleButton, ToggleButtonGroup} from 'react-bootstrap';
 import Tone from 'tone';
 import StartAudioContext from 'startaudiocontext';
 
-import {renderAcrnSequence} from './acrnRenderer';
-import {audioBufferToWav, downloadBlob} from './wavEncoder';
+import {renderAcrnWav} from './acrnRenderer';
+import {downloadBlob} from './wavEncoder';
+import {generateFreqs, buildPatternPeriod, STEPS_PER_PERIOD} from './crProtocol';
 
 class App extends Component {
     constructor(props, context) {
@@ -30,13 +31,9 @@ class App extends Component {
             buttonText = constants.PLAY_SEQ_TEXT;
         }
 
-        // generate initial sequence
-        let freqSeq = this.generateSequence();
-
         // setup initial state
         this.state = {
             freq: localFreq,
-            freqSeq: freqSeq,
             volume: localVolume,
             playState: playerState,
             enableSlider: true,
@@ -73,7 +70,10 @@ class App extends Component {
 
     componentDidMount = () => {
         //set the bpm and initialize sound context
-        Tone.Transport.bpm.value = 90 * 4;
+        // Cycle repetition rate is 1.5 Hz (Tass et al. 2012): one cycle of 4
+        // tones per 1/1.5 s, so each tone ("4n") lasts (1/1.5)/4 s. That makes
+        // one quarter note = TONE_SECONDS, i.e. bpm = 60 / TONE_SECONDS = 360.
+        Tone.Transport.bpm.value = 60 / constants.TONE_SECONDS;
         Tone.context.latencyHint = 'interactive';
         StartAudioContext(Tone.context, '.App');
         // make sure volume is off initially
@@ -90,14 +90,21 @@ class App extends Component {
     handleFreqChange = value => {
         let {osc} = this.state;
         osc.frequency.value = value;
-        let newFreqs = this.generateSequence(value);
 
         this.setState({
             freq: value,
-            freqSeq: newFreqs,
         });
 
         localStorage.setItem(constants.FREQ_KEY, value);
+
+        // If the CR sequence is currently playing, rebuild it so the new
+        // frequency's tones take effect immediately.
+        let {isPlaying, playState, sequence} = this.state;
+        if (isPlaying && playState === constants.PLAYER_STATES.PLAY_ACRN && sequence) {
+            sequence.cancel();
+            sequence.dispose();
+            this.playAcrn();
+        }
     };
 
 
@@ -130,43 +137,54 @@ class App extends Component {
 
         this.setState({isExporting: true});
 
-        // Render in a separate (offline) audio context so it does not block
-        // for the full hour: OfflineAudioContext renders faster than realtime.
-        renderAcrnSequence(freq, constants.EXPORT_DURATION_SECONDS)
-            .then((audioBuffer) => {
-                let blob = audioBufferToWav(audioBuffer);
-                downloadBlob(blob, `acrn-${freq}hz-1hour.wav`);
-                this.setState({isExporting: false});
-            })
-            .catch((err) => {
-                // Surface the failure without leaving the button stuck.
-                console.error('WAV export failed:', err);
-                window.alert('Sorry, the WAV export failed. See the console for details.');
-                this.setState({isExporting: false});
-            });
+        // Render in a separate (offline) audio context. OfflineAudioContext
+        // renders faster than realtime, so this should take seconds, not the
+        // full track length. The try/catch is a belt-and-suspenders guard in
+        // case renderAcrnSequence throws synchronously before returning its
+        // promise; the renderer already wraps its work in a promise too.
+        try {
+            renderAcrnWav(freq, constants.EXPORT_DURATION_SECONDS)
+                .then((blob) => {
+                    downloadBlob(blob, `acrn-${freq}hz-15min.wav`);
+                    this.setState({isExporting: false});
+                })
+                .catch((err) => {
+                    // Surface the failure without leaving the button stuck.
+                    console.error('WAV export failed:', err);
+                    window.alert('Sorry, the WAV export failed: ' + (err && err.message ? err.message : err));
+                    this.setState({isExporting: false});
+                });
+        } catch (err) {
+            console.error('WAV export failed (sync):', err);
+            window.alert('Sorry, the WAV export failed: ' + (err && err.message ? err.message : err));
+            this.setState({isExporting: false});
+        }
     };
 
     playAcrn = () => {
-        let {synth, freqSeq, freq} = this.state;
-        let seqCount = 0;
-        let freqList = this.generateFreqs(freq);
-        let currentFreqList = [];
-        let maxPatternLength = constants.LOOP_REPEAT * freqList.length;
-        let newSequence = new Tone.Sequence((time, frequency) => {
-            seqCount++;
-            if (seqCount < maxPatternLength) {
-                if (currentFreqList.length === 0) {
-                    currentFreqList = this.shuffle(freqList.slice());
-                }
-                synth.triggerAttackRelease(currentFreqList.pop(), "4n");
-            } else {
-                if (seqCount < maxPatternLength + constants.REST_LENGTH) {
-                    // do nothing
-                } else {
-                    seqCount = 0;
-                }
+        let {synth, freq} = this.state;
+
+        // Build one full 3:2 ON-OFF period (20 steps): 3 cycles of 4
+        // random-ordered tones followed by 2 silent cycles (Tass et al. 2012).
+        // A null step is silence. The tone order is randomized per ON cycle.
+        let pattern = buildPatternPeriod(freq);
+        let stepIndex = 0;
+
+        // One Tone.Sequence step per protocol step. Each step is "4n", which at
+        // the configured bpm equals TONE_SECONDS, giving the 1.5 Hz cycle rate.
+        let newSequence = new Tone.Sequence((time, step) => {
+            let frequency = pattern[stepIndex];
+            if (frequency !== null && frequency !== undefined) {
+                synth.triggerAttackRelease(frequency, "4n", time);
             }
-        }, freqSeq);
+            stepIndex++;
+            if (stepIndex >= pattern.length) {
+                // New period: re-randomize the tone order of each ON cycle.
+                pattern = buildPatternPeriod(freq);
+                stepIndex = 0;
+            }
+        }, new Array(STEPS_PER_PERIOD).fill(0));
+
         this.setState({sequence: newSequence});
         newSequence.set({loop: true});
         newSequence.start(0);
@@ -210,31 +228,11 @@ class App extends Component {
         }
     };
 
+    // The 4 CR tone frequencies for the current tinnitus frequency, placed
+    // equidistantly on a log scale within [0.5*ft, 2*ft] (Tass et al. 2012).
+    // Delegates to the shared protocol module so live and export stay in sync.
     generateFreqs = (currentFreq) => {
-        return [Math.floor(currentFreq * 0.773 - 44.5), Math.floor(currentFreq * 0.903 - 21.5),
-            Math.floor(currentFreq * 1.09 + 52), Math.floor(currentFreq * 1.395 + 26.5)];
-    };
-
-    generateSequence = () => {
-        // just needs to be the correct number of beats. Frequency content is ignored.
-        let freqSeq = [];
-
-        // can all be empty since tones are geneated during loop play
-        for (let i = 0; i < constants.LOOP_REPEAT; i++) {
-            freqSeq.push(...[0,0,0,0]);
-        }
-        for (let i = 0; i < constants.REST_LENGTH + 1; i++) {
-            freqSeq.push([0]);
-        }
-        return freqSeq;
-    };
-
-    shuffle = (a) => {
-        for (let i = a.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [a[i], a[j]] = [a[j], a[i]];
-        }
-        return a;
+        return generateFreqs(currentFreq);
     };
 
     handleRadioChange = (newPlayState) => {

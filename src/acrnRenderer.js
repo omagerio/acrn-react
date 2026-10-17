@@ -1,7 +1,7 @@
 // Offline renderer that reproduces the live ACRN sequence played by App.js,
-// using the native Web Audio API (OfflineAudioContext). The goal is to match,
-// as closely as possible, the audio characteristics of the live playback
-// driven by Tone.js 0.12 so the exported WAV sounds the same as the app.
+// using the native Web Audio API (OfflineAudioContext). It renders the exact
+// same CR neuromodulation protocol (Tass et al. 2012) as the live playback,
+// via the shared crProtocol module, so the exported WAV matches the app.
 //
 // The live chain (Tone.js 0.12) for the sequence is:
 //   Tone.PolySynth(6, Tone.Synth, { oscillator: sine,
@@ -19,24 +19,18 @@
 //                      time + duration("4n"), timeConstant = ln(release+1)/ln(200)
 //     - oscillator stops at time + duration + release
 //
-// Sequence timing:
-//   Tone.Transport.bpm.value = 90 * 4 = 360
-//   new Tone.Sequence(cb, freqSeq) with no subdivision -> default "4n"
-//   "4n" at 360 bpm = (60/360) * 1 = 0.166666... s per step
-//   freqSeq has 21 top-level entries (16 zeros + 5 single-element subarrays),
-//   so the sequence advances one callback per step, 21 steps per sequence loop.
-//
-//   The callback keeps a persistent `seqCount` (closure in playAcrn) that is NOT
-//   reset per sequence loop; it is reset by its own logic when it reaches
-//   maxPatternLength + REST_LENGTH. We reproduce that exact counter logic below.
+// Protocol timing (from constants / crProtocol):
+//   Cycle repetition rate 1.5 Hz => each tone ("4n") lasts TONE_SECONDS.
+//   3:2 ON-OFF pattern: STEPS_PER_PERIOD steps per period, driven by
+//   buildPatternPeriod(ft). Silent steps are null.
 
 import * as constants from './constants';
+import {buildPatternPeriod, STEPS_PER_PERIOD} from './crProtocol';
+import {audioBufferToWav} from './wavEncoder';
 
-// --- Constants mirrored from the live App.js configuration ---
-const BPM = 90 * 4;                 // Tone.Transport.bpm.value in App.componentDidMount
-const SECONDS_PER_BEAT = 60 / BPM;  // Tone _beatsToUnits(1)
-const STEP_SECONDS = SECONDS_PER_BEAT; // "4n" (default Sequence subdivision) = 1 beat
-const QUARTER_NOTE_SECONDS = SECONDS_PER_BEAT; // "4n" duration passed to triggerAttackRelease
+// --- Timing mirrored from the shared protocol constants ---
+const STEP_SECONDS = constants.TONE_SECONDS;        // one protocol step ("4n")
+const QUARTER_NOTE_SECONDS = constants.TONE_SECONDS; // "4n" duration for triggerAttackRelease
 
 // Envelope settings from App.js synth config
 const ENV_ATTACK = 0.1;
@@ -44,33 +38,11 @@ const ENV_DECAY = 0.0;
 const ENV_SUSTAIN = 0.07;
 const ENV_RELEASE = 0.08;
 
-// Number of top-level steps in the generated freqSeq (16 active + REST_LENGTH + 1 rest slots)
-const SEQ_STEPS = (constants.LOOP_REPEAT * 4) + (constants.REST_LENGTH + 1); // 16 + 5 = 21
-
 // Tone's exponential "targetRampTo" time constant for a given ramp time.
 // From Tone/core/Param.js exponentialApproachValueAtTime:
 //   timeConstant = Math.log(rampTime + 1) / Math.log(200)
 function toneTargetTimeConstant(rampTime) {
     return Math.log(rampTime + 1) / Math.log(200);
-}
-
-// generateFreqs mirrors App.generateFreqs exactly.
-function generateFreqs(currentFreq) {
-    return [
-        Math.floor(currentFreq * 0.773 - 44.5),
-        Math.floor(currentFreq * 0.903 - 21.5),
-        Math.floor(currentFreq * 1.09 + 52),
-        Math.floor(currentFreq * 1.395 + 26.5),
-    ];
-}
-
-// Fisher-Yates shuffle, identical to App.shuffle.
-function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
 }
 
 /**
@@ -111,73 +83,160 @@ function scheduleNote(ctx, destination, frequency, startTime) {
 }
 
 /**
- * Render `durationSeconds` of the ACRN sequence for the given base frequency
+ * Render `durationSeconds` of the CR sequence for the given base frequency
  * to an AudioBuffer using an OfflineAudioContext.
  *
- * The scheduling reproduces App.playAcrn's seqCount logic step-by-step across
- * the whole duration, including the shuffle-and-refill of the frequency list
- * and the rest handling.
+ * The scheduling walks the 3:2 ON-OFF protocol step-by-step across the whole
+ * duration, rebuilding each period with buildPatternPeriod so every ON cycle
+ * gets a fresh random tone order — identical to the live playback.
  *
- * @param {number} baseFreq the current frequency selected in the app
- * @param {number} durationSeconds total render length (default 1 hour)
+ * @param {number} baseFreq the current tinnitus frequency selected in the app
+ * @param {number} durationSeconds total render length
  * @param {number} sampleRate
  * @returns {Promise<AudioBuffer>}
  */
-export function renderAcrnSequence(baseFreq, durationSeconds = 3600, sampleRate = 44100) {
-    const totalFrames = Math.ceil(durationSeconds * sampleRate);
+export function renderSegment(baseFreq, durationSeconds, sampleRate = 44100) {
+    // Wrap everything in a Promise so that ANY failure — including synchronous
+    // errors from constructing the OfflineAudioContext or scheduling nodes —
+    // is delivered through rejection. Previously these synchronous errors
+    // escaped the caller's .catch, leaving the UI stuck with no feedback.
+    return new Promise((resolve, reject) => {
+        try {
+            const totalFrames = Math.ceil(durationSeconds * sampleRate);
 
-    // OfflineAudioContext signature varies slightly across browsers; the
-    // (numChannels, length, sampleRate) form is the most widely supported.
-    const OfflineCtx = window.OfflineAudioContext || window.webkitOfflineAudioContext;
-    const ctx = new OfflineCtx(1, totalFrames, sampleRate);
-
-    // A master gain mirrors Tone.Master. The live export uses full volume
-    // (0 dB => gain 1). Because consecutive notes overlap (a note's release
-    // tail overlaps the next note's attack) and the PolySynth sums voices with
-    // no normalization, we apply a modest headroom factor to avoid hard
-    // clipping while preserving the relative dynamics.
-    const master = ctx.createGain();
-    master.gain.setValueAtTime(0.7, 0);
-    master.connect(ctx.destination);
-
-    const freqList = generateFreqs(baseFreq);
-    const maxPatternLength = constants.LOOP_REPEAT * freqList.length; // 16
-    let currentFreqList = [];
-    let seqCount = 0;
-
-    // Walk every sequence step across the full duration. Each step is one
-    // Tone.Sequence callback invocation at STEP_SECONDS spacing.
-    const totalSteps = Math.ceil(durationSeconds / STEP_SECONDS);
-
-    for (let step = 0; step < totalSteps; step++) {
-        const stepTime = step * STEP_SECONDS;
-
-        // Reproduce the exact counter logic from App.playAcrn:
-        //   seqCount++ at the start of each callback.
-        seqCount++;
-
-        if (seqCount < maxPatternLength) {
-            if (currentFreqList.length === 0) {
-                currentFreqList = shuffle(freqList.slice());
+            const OfflineCtx = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+            if (!OfflineCtx) {
+                throw new Error('OfflineAudioContext is not supported in this browser.');
             }
-            const frequency = currentFreqList.pop();
-            scheduleNote(ctx, master, frequency, stepTime);
-        } else {
-            if (seqCount < maxPatternLength + constants.REST_LENGTH) {
-                // rest: do nothing
-            } else {
-                seqCount = 0;
+
+            // The constructor signature differs across browsers. Prefer the
+            // options-object form, then fall back to the positional form.
+            let ctx;
+            try {
+                ctx = new OfflineCtx({
+                    numberOfChannels: 1,
+                    length: totalFrames,
+                    sampleRate: sampleRate,
+                });
+            } catch (optErr) {
+                ctx = new OfflineCtx(1, totalFrames, sampleRate);
             }
+
+            // A master gain mirrors Tone.Master. Because a note's release tail
+            // overlaps the next note's attack and voices sum with no
+            // normalization, apply modest headroom to avoid hard clipping.
+            const master = ctx.createGain();
+            master.gain.setValueAtTime(0.7, 0);
+            master.connect(ctx.destination);
+
+            const totalSteps = Math.ceil(durationSeconds / STEP_SECONDS);
+
+            // Walk every protocol step, rebuilding the 3:2 period as we loop.
+            let pattern = buildPatternPeriod(baseFreq);
+            let stepIndex = 0;
+
+            for (let step = 0; step < totalSteps; step++) {
+                const stepTime = step * STEP_SECONDS;
+                const frequency = pattern[stepIndex];
+                if (frequency !== null && frequency !== undefined) {
+                    scheduleNote(ctx, master, frequency, stepTime);
+                }
+                stepIndex++;
+                if (stepIndex >= pattern.length) {
+                    pattern = buildPatternPeriod(baseFreq);
+                    stepIndex = 0;
+                }
+            }
+
+            // Support both the modern Promise-based API and the legacy
+            // callback-based (oncomplete) API. Some engines only resolve via
+            // one of the two, so we wire up both and take whichever fires.
+            let settled = false;
+            const finish = (buffer) => {
+                if (settled) return;
+                settled = true;
+                resolve(buffer);
+            };
+
+            ctx.oncomplete = (event) => finish(event.renderedBuffer);
+
+            const maybePromise = ctx.startRendering();
+            if (maybePromise && typeof maybePromise.then === 'function') {
+                maybePromise.then(finish).catch(reject);
+            }
+        } catch (err) {
+            reject(err);
         }
-    }
+    });
+}
 
-    return ctx.startRendering();
+// Duration of the segment that is actually rendered with the Web Audio engine.
+// The CR pattern repeats every period (STEPS_PER_PERIOD steps). We render a
+// whole number of periods, then tile that segment to reach the requested total
+// length. This keeps the offline render tiny (seconds of audio) instead of
+// allocating a huge buffer for the full track — which is what was causing the
+// export to hang / fail silently for long durations.
+const PERIOD_SECONDS = STEPS_PER_PERIOD * STEP_SECONDS; // one 3:2 period (~3.333 s)
+// ~18 periods ≈ 60 s. Must be a whole number of periods so the tiled seams
+// land exactly on a pattern boundary (no clicks, no timing drift).
+const SEGMENT_PERIODS = 18;
+const SEGMENT_SECONDS = SEGMENT_PERIODS * PERIOD_SECONDS;
+
+/**
+ * Render the full ACRN track for the given frequency and total duration, and
+ * return it as a WAV Blob.
+ *
+ * Internally this renders one SEGMENT_SECONDS-long segment with the offline
+ * audio engine (fast, small) and tiles its PCM samples to fill the full
+ * duration. Because the segment is a whole number of CR periods, the loop
+ * points align exactly on pattern boundaries.
+ *
+ * @param {number} baseFreq current tinnitus frequency
+ * @param {number} durationSeconds total output length
+ * @param {number} sampleRate
+ * @returns {Promise<Blob>} a WAV Blob of the full track
+ */
+export function renderAcrnWav(baseFreq, durationSeconds = 3600, sampleRate = 44100) {
+    // If the requested duration is already short, just render it directly.
+    const segmentSeconds = Math.min(SEGMENT_SECONDS, durationSeconds);
+
+    return renderSegment(baseFreq, segmentSeconds, sampleRate).then((segmentBuffer) => {
+        const segFrames = segmentBuffer.length;
+        const segData = segmentBuffer.getChannelData(0);
+
+        const totalFrames = Math.ceil(durationSeconds * sampleRate);
+
+        // Build the full mono track by tiling the segment's samples. This is
+        // a plain Float32Array copy — cheap and memory-predictable compared to
+        // rendering the full duration through Web Audio.
+        const fullData = new Float32Array(totalFrames);
+        let offset = 0;
+        while (offset < totalFrames) {
+            const remaining = totalFrames - offset;
+            const copyLen = Math.min(segFrames, remaining);
+            fullData.set(segData.subarray(0, copyLen), offset);
+            offset += copyLen;
+        }
+
+        // Wrap the Float32Array in a minimal AudioBuffer-like object that the
+        // WAV encoder understands (it only needs numberOfChannels, sampleRate,
+        // length and getChannelData).
+        const fullBuffer = {
+            numberOfChannels: 1,
+            sampleRate: sampleRate,
+            length: totalFrames,
+            getChannelData: () => fullData,
+        };
+
+        return audioBufferToWav(fullBuffer);
+    });
 }
 
 export const RENDER_CONSTANTS = {
-    BPM,
     STEP_SECONDS,
-    SEQ_STEPS,
+    STEPS_PER_PERIOD,
+    PERIOD_SECONDS,
+    SEGMENT_SECONDS,
     ENV_ATTACK,
     ENV_DECAY,
     ENV_SUSTAIN,
